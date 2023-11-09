@@ -52,6 +52,10 @@ header nav .itemNav {
     font-size: 20px;
     font-weight: 600;
 }
+/* Pseudoclase */
+.navegacionNav .itemNav a:hover{
+    color: #8ba0e7;
+}
 
 .navegacionNav li a{
     text-decoration:none;
@@ -95,6 +99,12 @@ header nav .itemNav {
     text-decoration:none;
     color: white;
 }
+/* Pseudoclase */
+.footerNav ul li a:hover {
+    color: #8ba0e7;
+}
+
+
 /*------------- Termina Footer's Nav-------------*/
 
 /*------------- Comienza el newsletter-------------*/
@@ -213,53 +223,87 @@ header nav .itemNav {
 /* TERMINA EL CONTENIDO DEL INDEX */
 
 
-
 /* EMPIEZA EL CONTENIDO DE INTEGRANTES */
 /* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */
 .contenidoIntegrantes {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
+    background-color: #120907;
+}
+.contenidoIntegrantes h1 {
+    font-size: 300%;
+    font-family: "DevilCandle";
+    text-align: center;
+    padding: 1rem;
+    color: #bfdded;
 }
 
-
-.integrantesBios {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(4, 200px);
-    background-color: yellow;
-    overflow:scroll;
-
-}
-/* .integrantesBios p {
-    
-} */
 .integrantesBios div {
-    
-    width: 100%;
-    background-color: yellowgreen;
-    border: 1px solid;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.danReynolds {
+    display: grid;
+    grid-template-columns: 8fr 3fr ;
+    font-size: 23px;
+    background-color: #515a87;
+    justify-items: end;
+}
+.danReynolds p {
+    padding-left: 30px;
+    padding-right: 0px;
+}
 
+.wayneSermon {
+    display: grid;
+    grid-template-columns: 3fr 8fr ;
+    font-size: 23px;
+    background-color: #8ba0e7;
+}
+.wayneSermon p {
+    padding-right: 20px;
+    padding-left: 0px;
+}
 
+.benMcKee {
+    display: grid;
+    grid-template-columns: 8fr 2fr ;
+    font-size: 23px;
+    background-color: #515a87;
+    justify-items: end;
+}
+.benMcKee p {
+    padding-left: 30px;
+    padding-right: 0px;
+}
+.danielPlatzman {
+    display: grid;
+    grid-template-columns: 2fr 8fr ;
+    font-size: 23px;
+    background-color:#8ba0e7 ;
+}
+.danielPlatzman p {
+    padding-right: 50px;
+    padding-left: 0px;
+}
 
-
-
-
-
-
+.integrantesBios img {
+    display: flex;
+    height: 43vh;
+}
+/* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */
+/* TERMINA EL CONTENIDO DE INTEGRANTES */
 
 
 
 /* EMPIEZA EL CONTACTO */
+/* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO */
 .secForm {
     display: flex;
     align-items: start;
-    background-color: #bfdded;
     background-color: #8ba0e7;
     height: 100vh;
     margin: 0;
@@ -298,8 +342,15 @@ header nav .itemNav {
 }
 .ayudanos div label {
     font-weight: bold;
-    color:  #1c1f34;
+    color: black;
 }
+.ayudanos div input {
+    background-color: #bfdded;
+}
+.ayudanos div textarea {
+    background-color: #bfdded;
+}
+
 .contactBotoncitos {
     width: 100%;
 }
@@ -307,9 +358,29 @@ header nav .itemNav {
     background-color:#bfdded;
     color: #120907;
 }
+/* Pseudoclase */
+.contactBotoncitos button:hover {
+    background-color:#515a87;
+}
+/* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO */
 /* FIN DEL CONTACTO */
 
 
+.color1 {
+    color: #120907;
+}
+.color2 {
+    color: #1c1f34;
+}
+.color3 {
+    color: #515a87;
+}
+.color4 {
+    color: #8ba0e7;
+}
+.color5 {
+    color: #bfdded;
+}
 
 
 
