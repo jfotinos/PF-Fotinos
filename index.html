@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/5.png">
-
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- Custon styles -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Imagine dragons - Inicio</title>
@@ -16,8 +17,9 @@
 <!--                                           ||Inicio del Header||                                           -->
 <!--------------------------------------------------------------------------------------------------------------->
 <header id="top">
-        <img src="./assets/images/logo.jpg" alt="Logo de Imagine dragons" class="logo"/>
-        <nav>
+    <div class="cabecera">    
+            <img src="../assets/images/logo.jpg" alt="Logo" class="logo"/>
+            <nav>
             <ul class="navegacionNav">
                 <li class="itemNav"><a href="./index.html">Inicio</a></li>
                 <li class="itemNav"><a href="./pages/integrantes.html">Integrantes</a></li>
@@ -27,6 +29,7 @@
                 <li class="itemNav"><a href="./pages/contacto.html">Ayúdanos!</a></li>
             </ul>
         </nav>
+    </div>
     </header>
     
 <!--                                            ||Fin del Header||                                             -->
@@ -38,7 +41,7 @@
     <div class="boxBiog">
         <h1 id="titleBio">Imagine dragons</h1>
         <p class="biog">Imagine Dragons es una banda de rock alternativo estadounidense que se formó en Las Vegas, Nevada, en 2008. La banda ha alcanzado un éxito significativo a nivel internacional y ha dejado una huella imborrable en la escena musical contemporánea.</p>
-        <p class="biog">La banda está compuesta por <a href="./integrantes.html">Dan Reynolds</a> (vocalista), <a href="./integrantes.html">Wayne Sermon</a> (guitarra principal), <a href="./integrantes.html">Ben McKee</a> (bajo) y <a href="./integrantes.html">Daniel Platzman</a> (batería). Su sonido es una mezcla ecléctica de rock, pop, electrónica y elementos indies, lo que les ha permitido atraer a una amplia variedad de oyentes.</p>
+        <p class="biog">La banda está compuesta por <a href="./pages/integrantes.html">Dan Reynolds</a> (vocalista), <a href="./pages/integrantes.html">Wayne Sermon</a> (guitarra principal), <a href="./pages/integrantes.html">Ben McKee</a> (bajo) y <a href="./pages/integrantes.html">Daniel Platzman</a> (batería). Su sonido es una mezcla ecléctica de rock, pop, electrónica y elementos indies, lo que les ha permitido atraer a una amplia variedad de oyentes.</p>
         <p class="biog">Imagine Dragons ganó reconocimiento mundial con su sencillo "It's Time" en 2012, seguido de su álbum debut "Night Visions" el mismo año. El álbum incluye éxitos como "Radioactive," "Demons" y "On Top of the World," que se convirtieron en himnos de la generación. "Radioactive," en particular, fue un gran éxito comercial y se mantuvo en las listas de éxitos durante mucho tiempo.</p>
         <p class="biog">La banda continuó lanzando álbumes exitosos como "Smoke + Mirrors" en 2015 y "Evolve" en 2017. Estos álbumes incluyen canciones populares como "Believer," "Thunder" y "Whatever It Takes."</p>
         <p class="biog">Imagine Dragons es conocido por sus enérgicos y emocionantes espectáculos en vivo, que han atraído a audiencias de todo el mundo. Su música ha sido utilizada en películas, comerciales y programas de televisión, lo que ha contribuido a su presencia constante en la cultura pop.</p>
@@ -53,21 +56,25 @@
 <section class="sectionss">
     <h2 class="titleSections">Secciones</h2>
 
-
     <div class="imagen-contenedor">
-        <a href="./integrantes.html#top">
-        <img src="./assets/images/integrantes.jpg" alt="Imagen 1">
+        <a href="./pages/integrantes.html#top">
+            <h6>Integrantes</h6>
+            <img src="./assets/images/integrantes.jpg" alt="Imagen 1">
         </a>
-        <a href="./discografia.html#top">
-        <img src="./assets/images/discografia.jpg" alt="Imagen 2">
+        <a href="./pages/discografia.html">
+            <h6>Discografía</h6>
+            <img src="./assets/images/discografia.jpg" alt="Imagen 2">
         </a>
-        <a href="./galeria.html#top">
+        <a href="./pages/galeria.html">
+            <h6>Galería</h6>
             <img src="./assets/images/galeria.webp" alt="Imagen 2">
         </a>
-        <a href="./giras.html#top">
+        <a href="./pages/giras.html">
+            <h6>Giras</h6>
             <img src="./assets/images/giras.jpeg" alt="Imagen 2">
         </a>
-        <a href="./contacto.html#top">
+        <a href="./pages/contacto.html">
+            <h6>Ayúdanos!</h6>
             <img src="./assets/images/ayudanos.gif" alt="Imagen 2">
         </a>
     </div>
@@ -84,11 +91,11 @@
     <section class="footerNav"> <!-- Footer nav -->
         <ul>
             <li class="itemFooterNav"><a href="./index.html">Inicio</a></li>
-            <li class="itemFooterNav"><a href="./integrantes.html">Integrantes</a></li>
-            <li class="itemFooterNav"><a href="./discografia.html">Discografía</a></li>
-            <li class="itemFooterNav"><a href="./galeria.html">Galería</a></li>
-            <li class="itemFooterNav"><a href="./giras.html">Giras</a></li>
-            <li class="itemFooterNav"><a href="./contacto.html">Ayúdanos!</a></li>
+            <li class="itemFooterNav"><a href="./pages/integrantes.html">Integrantes</a></li>
+            <li class="itemFooterNav"><a href="./pages/discografia.html">Discografía</a></li>
+            <li class="itemFooterNav"><a href="./pages/galeria.html">Galería</a></li>
+            <li class="itemFooterNav"><a href="./pages/giras.html">Giras</a></li>
+            <li class="itemFooterNav"><a href="./pages/contacto.html">Ayúdanos!</a></li>
         </ul>
     </section> <!-- Cierra footer nav -->
 
@@ -99,15 +106,18 @@
 <div class="newsletter">
 <h2>Newsletter</h2>
 <form action="" method="post">
-    <label for="email">✉ </label>
-    <input type="text" id="email" name="email" placeholder="Ingrese su correo electrónico" class="mailInput">
-
-    <section>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+    </div>
+    <section class="footerP">
         <p>¡Regístrate en nuestra newsletter para recibir notificaciones instantáneas cada vez que subamos nuevo contenido! </p>
         <p>De esta manera, te mantendremos al tanto de las últimas noticias, lanzamientos, todo sobre sus conciertos y mucho más.</p>
     </section>
 
-    <input type="submit" value="Enviar" class="enviar">
+    <div class="d-grid gap-2 col-6 mx-auto contactBotoncitos">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
 </form>
 </div>
 
@@ -115,5 +125,7 @@
 </div>
 
 <!--                                            ||Fin del Footer||                                             -->
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/5.png">
-
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- Custon styles -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Imagine dragons - Integrantes</title>
@@ -16,8 +17,9 @@
 <!--                                           ||Inicio del Header||                                           -->
 <!--------------------------------------------------------------------------------------------------------------->
 <header id="top">
-        <img src="../assets/images/logo.jpg" alt="Logo de Imagine dragons" class="logo"/>
-        <nav>
+    <div class="cabecera">    
+            <img src="../assets/images/logo.jpg" alt="Logo" class="logo"/>
+            <nav>
             <ul class="navegacionNav">
                 <li class="itemNav"><a href="../index.html">Inicio</a></li>
                 <li class="itemNav"><a href="./integrantes.html">Integrantes</a></li>
@@ -27,16 +29,47 @@
                 <li class="itemNav"><a href="./contacto.html">Ayúdanos!</a></li>
             </ul>
         </nav>
+    </div>
     </header>
 <!--                                            ||Fin del Header||                                             -->
-    <h1>Integrantes</h1>    
+
+<!-- _________________________________________________________________________________________________________ -->
+<!--                                           ||Inicio del Footer||                                           -->
+<!--------------------------------------------------------------------------------------------------------------->
+
+<h1>Integrantes</h1>   
+<div class="contenidoIntegrantes">
+<section class="integrantesBios">
+    <div class="danReyn">
+    <p>Daniel Coulter Reynolds, conocido artísticamente como Dan Reynolds, es el carismático vocalista principal de la banda. Nació el 14 de julio de 1987 en Las Vegas, Nevada. Desde joven, Dan mostró una pasión por la música y un deseo innato de hacerse oír.
+        Su camino hacia la fama se inició cuando co-fundó Imagine Dragons en 2008. La voz distintiva y la energía que Dan aporta a la banda han sido fundamentales para su éxito.
+        Pero Dan Reynolds es mucho más que un talentoso músico. Ha utilizado su plataforma para abogar por causas sociales importantes, en particular, la igualdad y los derechos de la comunidad LGBTQ+. Fundó la organización benéfica "LoveLoud," que se dedica a promover la aceptación y la inclusión. Su activismo ha hecho una diferencia significativa en la lucha por un mundo más inclusivo y comprensivo.
+        Con su voz poderosa y su compromiso con causas que van más allá de la música, Dan Reynolds es una figura icónica en la escena musical y un defensor apasionado de un mundo mejor y más igualitario. Su legado no solo se limita a la música, sino que también abarca la lucha por un cambio positivo en la sociedad.</p>
+        <!-- <img src="" alt="Dan Reynolds"> -->
+    </div>
+    <div>
+<p>foto de Reynolds</p>
+    </div>
+    <div>
+<p>segundo integrante</p>
+    </div>
+    <div>
+        <p>foto del segundo integrante</p>
+    </div>
+<div>tercer integrante</div>
+<div>foto del tercer integrante</div>
+<div>cuarto integrante</div>
+<div>foto del cuarto integrante</div>
+
+    </section>
+
 <!-- _________________________________________________________________________________________________________ -->
 <!--                                           ||Inicio del Footer||                                           -->
 <!--------------------------------------------------------------------------------------------------------------->
 <div class="footer">
     <section class="footerNav"> <!-- Footer nav -->
         <ul>
-            <li class="itemFooterNav"><a href="./index.html">Inicio</a></li>
+            <li class="itemFooterNav"><a href="../index.html">Inicio</a></li>
             <li class="itemFooterNav"><a href="./integrantes.html">Integrantes</a></li>
             <li class="itemFooterNav"><a href="./discografia.html">Discografía</a></li>
             <li class="itemFooterNav"><a href="./galeria.html">Galería</a></li>
@@ -52,15 +85,18 @@
 <div class="newsletter">
 <h2>Newsletter</h2>
 <form action="" method="post">
-    <label for="email">✉ </label>
-    <input type="text" id="email" name="email" placeholder="Ingrese su correo electrónico" class="mailInput">
-
-    <section>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+    </div>
+    <section class="footerP">
         <p>¡Regístrate en nuestra newsletter para recibir notificaciones instantáneas cada vez que subamos nuevo contenido! </p>
         <p>De esta manera, te mantendremos al tanto de las últimas noticias, lanzamientos, todo sobre sus conciertos y mucho más.</p>
     </section>
 
-    <input type="submit" value="Enviar" class="enviar">
+    <div class="d-grid gap-2 col-6 mx-auto contactBotoncitos">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
 </form>
 </div>
 
@@ -68,5 +104,7 @@
 </div>
 
 <!--                                            ||Fin del Footer||                                             -->
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>

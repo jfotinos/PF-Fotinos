@@ -14,36 +14,42 @@
 body {
     font-family: 'Ubuntu', sans-serif;
 }
+
 /* Inicio del Header */
-header{
-    border: 5px solid rgb(55, 54, 54);
-    background-color: rgb(55, 54, 54);
-    height: 75px;
+#top {
+    display: flex;
     position: sticky;
-    top: 0;
+    top: 0; 
     z-index: 10;
+}
+
+.cabecera {
+    display: flex;
+    background-color: #1c1f34;
+    border: solid  10px #1c1f34;
+    height: 5em;
+    justify-content:space-between ;
+    align-items: center;
 }
 .logo {
     width: 25%;
-    margin-top: 7px;
-    margin-left: 10px;
+    border-radius: 2rem;
 }
 /* NAV HEADER */
 header nav {
-    width: 57%;
+    width: 75%;
     height: 50px;
-    display: inline-block;
-    position: relative;
-    top: -15px;
-    left: 380px;
-    padding: 5px;
+    display: flex;
+    padding: 5px;   
+    align-items: start;
+    justify-content: end;
 }
 
 header nav .itemNav {
     display: inline-block;
     padding: 15px 43px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 130%;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -53,92 +59,33 @@ header nav .itemNav {
 }
 /* FIN DEL HEADER */
 
-/* INICIO DEL CONTENIDO */
-.imgBackground {
-    width: 100%;
-    height: 100rem;
-    background-size: contain;
-    background-image: url("../assets/images/imagineDragonsConcert.jpg");
-    background-repeat: no-repeat;
-}
-.boxBiog{
-    width: 45%;
-    height: 50rem;
-    position: relative;
-    left: 510px;
-    bottom: -70px;
-    background-color: rgba(255, 255, 255, 0.655);
-
-}
-#titleBio {
-    font-size: 250%;
-    font-family: "DevilCandle";
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.biog {
-    font-size: 132%;
-    margin: 0px 15px 15px;
-}
-/* TERMINA EL CONTENIDO */
-
-/* EMPIEZA LA SECCION DE SECCIONES */
-.sectionss {
-    background-color: black;
-    position: relative;
-    top: -331px;
-    padding-top: 45px;
-}
-
-.titleSections {
-    font-weight:bold;
-    font-size: 250%;
-    text-align: center;
-    margin-bottom: 30px;
-    color: white;
-}
-
-    .imagen-contenedor {
-    display: flex; 
-}
-
-    .imagen-contenedor a {
-    margin-right: 15px;
-}
-
-.imagen-contenedor img {
-    max-width: 100px;
-    height: auto; 
-}
-
-
-
-
-
-
-
-
-/* TERMINA LA SECCION DE SECCIONES */
-
 /* -------------EMPIEZA EL FOOTER -------------*/
 .footer {
-    background-color: rgb(55, 54, 54);
-    margin-top: 100px; 
+    background-color: #1c1f34; 
+    display: flex;
+    margin-top: 0px; 
+    padding-bottom: 0px;
+    width: 100%;
+    height: 95vh;
+    justify-content: space-between;
+    justify-items: center;
+    
+
 }
 
 /*------------- Empieza Footer's Nav-------------*/
 .footerNav {
+    display: flex;
+    flex-direction: column;
     width: 45rem;
-    height: 45rem;
-    margin-left: 0px;
-    display: inline-block;
+    height: 90vh;
+    justify-content: end;
 }
 
 .itemFooterNav {
     font-family: "DevilCandle";
     font-size: 390%;
-    margin: 35px 70px 15px ;
+    margin: 35px 70px 29px ;
 }
 .footerNav ul {
     list-style: none;
@@ -153,51 +100,217 @@ header nav .itemNav {
 /*------------- Comienza el newsletter-------------*/
 
 .newsletter {
-    width: 1000px ;
-    height: 500px;
-    margin: 50px 20px 50px 60%;
-    /* background-color: blue; */
-    display: inline-block;
-    position: relative;
-    top: -700px;
-    right: 300px;
+    display: flex;
+    width: 50%;
+    margin-right: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
 }
 
 .newsletter h2{
     text-align: center;
-    font-size: 380%;
+    font-size: 4em;
     font-style: italic;
-    margin-bottom: 30px;
     color: white;
 }
 
-.newsletter label {
-    font-size: 350%;
+.newsletter .footerP {
     color: white;
-    position: relative;
-    top: -25px;
-    left: 100px;
-}
-
-.mailInput {
-    height: 35px;
-    width: 730px;
-    position: relative;
-    top: -39px;
-    left: 100px;
-}
-
-.newsletter p {
-    font-size: 130%;
-    margin: 0px 15px 5px 25px;
+    font-size: 21px;
     text-align: center;
-    color: white;
 }
-.newsletter .enviar {  
-    width: 730px;
-    height: 35px;
-    position: relative;
-    left: 147px;
-    top: 30px;
+.newsletter .contactBotoncitos {
+    width: 50%;
 }
 /* -------------TERMINA EL FOOTER -------------*/
+
+
+/* -------------INICIA EL CONTENIDO -------------*/
+/* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */
+.imgBackground {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:79rem;
+    background-size: contain;
+    background-image: url("../assets/images/imagineDragonsConcert.jpg");
+    background-repeat: no-repeat;
+}
+.boxBiog{
+    width: 45%;
+    height: 100vh;
+    display:flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.655);
+
+}
+#titleBio {
+    font-size: 250%;
+    font-family: "DevilCandle";
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.biog {
+    font-size: 21px;
+    margin: 0px 15px 15px;
+    color: black;
+}
+
+/* EMPIEZA LA SECCION DE SECCIONES */
+.sectionss {
+    background-color: black;
+    margin-top: 0px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.titleSections {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    font-weight:bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 350%;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    color: #120907;
+    justify-content:center ;
+    background-color: #515a87;
+
+}
+
+.imagen-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.imagen-contenedor a {
+    text-decoration: none;
+    margin: 50px 120px 50px 50px;
+}
+
+.imagen-contenedor a h6 {
+    text-align: center;
+    font-size: 2rem;
+    background: #bfdded;
+    color: #1c1f34;
+}
+
+.imagen-contenedor img {
+    width: 310px;
+    height: auto; 
+}
+/* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */
+/* TERMINA EL CONTENIDO DEL INDEX */
+
+
+
+/* EMPIEZA EL CONTENIDO DE INTEGRANTES */
+/* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */
+.contenidoIntegrantes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.integrantesBios {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+    background-color: yellow;
+    overflow:scroll;
+
+}
+/* .integrantesBios p {
+    
+} */
+.integrantesBios div {
+    
+    width: 100%;
+    background-color: yellowgreen;
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* EMPIEZA EL CONTACTO */
+.secForm {
+    display: flex;
+    align-items: start;
+    background-color: #bfdded;
+    background-color: #8ba0e7;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.secFormText {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #120907;
+}
+.secFormText h1 {
+    font-size: 4em;
+    font-family: "DevilCandle";
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1c1f34;
+}
+.container-fluid { 
+    padding: 0;
+}
+.form-floating .form-control {
+    height: 200px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+
+}
+.ayudanos {
+    padding-right: 10%;
+    width: 35%;
+    margin-top: 10%;
+}
+.ayudanos div label {
+    font-weight: bold;
+    color:  #1c1f34;
+}
+.contactBotoncitos {
+    width: 100%;
+}
+.contactBotoncitos button {
+    background-color:#bfdded;
+    color: #120907;
+}
+/* FIN DEL CONTACTO */
+
+
+
+
+
+
