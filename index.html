@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/5.png">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <!--Bootstrap -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- Custon styles -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Imagine dragons - Inicio</title>
@@ -18,8 +20,11 @@
 <!--------------------------------------------------------------------------------------------------------------->
 <header id="top">
     <div class="cabecera">    
-            <img src="../assets/images/logo.jpg" alt="Logo" class="logo"/>
+            <img src="./assets/images/logo.jpg" alt="Logo" class="logo"/>
             <nav>
+            <!-- Menu mobile -->
+            <input type="checkbox" id="checkMenuu">
+            
             <ul class="navegacionNav">
                 <li class="itemNav"><a href="./index.html">Inicio</a></li>
                 <li class="itemNav"><a href="./pages/integrantes.html">Integrantes</a></li>
@@ -28,6 +33,10 @@
                 <li class="itemNav"><a href="./pages/giras.html">Giras</a></li>
                 <li class="itemNav"><a href="./pages/contacto.html">Ayúdanos!</a></li>
             </ul>
+            <label for="checkMenuu">
+                <i class="bx bx-menu"></i>
+                <!-- Termina menu mobile  -->
+            </label>
         </nav>
     </div>
     </header>
@@ -37,6 +46,7 @@
 <!-- _________________________________________________________________________________________________________ -->
 <!--                                         ||Inicio del contenido||                                          -->
 <!--------------------------------------------------------------------------------------------------------------->
+<div class="contenedorGrande">
 <section class="imgBackground"> <!--Inicio de la biografia de la banda-->
     <div class="boxBiog">
         <h1 id="titleBio">Imagine dragons</h1>
@@ -48,6 +58,10 @@
         <p class="biog">La banda no solo ha ganado el reconocimiento de la crítica, sino que también ha recibido varios premios y nominaciones, incluyendo los premios Grammy. Su estilo único y su habilidad para crear himnos pegajosos les han convertido en una de las bandas más influyentes de su generación. Con una creciente base de seguidores y una carrera en constante evolución, Imagine Dragons continúa dejando una marca indeleble en la música contemporánea.</p>
         </div>
 </section> <!--Fin de la biografia de la banda-->
+    <div class="barra de relleno para la foto">
+
+    </div>
+</div>
 <!--                                           ||Fin del contenido||                                           -->
 
 <!-- _________________________________________________________________________________________________________ -->

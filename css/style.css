@@ -14,13 +14,18 @@
 body {
     font-family: 'Ubuntu', sans-serif;
 }
-
+/* Pseudo elemento para pintar texto */
+p::selection {
+background-color: #bfdded;
+color: black;
+}
 /* Inicio del Header */
 #top {
     display: flex;
     position: sticky;
     top: 0; 
     z-index: 10;
+    width: 100%;
 }
 
 .cabecera {
@@ -30,6 +35,7 @@ body {
     height: 5em;
     justify-content:space-between ;
     align-items: center;
+    width: 100%;
 }
 .logo {
     width: 25%;
@@ -61,6 +67,20 @@ header nav .itemNav {
     text-decoration:none;
     color: white;
 }
+/* MENU MOBILE */
+#checkMenuu, .cabecera label {
+    display: none;
+}
+.cabecera label i {
+    font-size: 3em;
+    color: white;
+}
+
+
+
+
+
+
 /* FIN DEL HEADER */
 
 /* -------------EMPIEZA EL FOOTER -------------*/
@@ -124,7 +144,9 @@ header nav .itemNav {
     font-style: italic;
     color: white;
 }
-
+.newsletter form input {
+    background-color: #bfdded;
+}
 .newsletter .footerP {
     color: white;
     font-size: 21px;
@@ -138,14 +160,26 @@ header nav .itemNav {
 
 /* -------------INICIA EL CONTENIDO -------------*/
 /* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */
+.contenedorGrande {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* El border-right de abajo es para tapar el hueco blanco que queda en el
+    fondo, pero al hacerlo, se me crea una mini linea blanca debajo del fondo.*/
+    border-right: solid 10px #1c1f34;
+}
 .imgBackground {
     display: flex;
+    padding: 0;
+    margin: 0;
     justify-content: center;
     width: 100%;
     height:79rem;
     background-size: contain;
     background-image: url("../assets/images/imagineDragonsConcert.jpg");
     background-repeat: no-repeat;
+
 }
 .boxBiog{
     width: 45%;
@@ -207,6 +241,11 @@ header nav .itemNav {
     text-decoration: none;
     margin: 50px 120px 50px 50px;
 }
+/* Pseudoclase */
+.imagen-contenedor a:hover {
+    border:#bfdded solid 8px;
+    border-radius: 1rem;
+}
 
 .imagen-contenedor a h6 {
     text-align: center;
@@ -217,8 +256,15 @@ header nav .itemNav {
 
 .imagen-contenedor img {
     width: 310px;
-    height: auto; 
+    height: auto;
+    opacity: .85;
 }
+/* Pseudoclase */
+.imagen-contenedor img:hover {
+    opacity: 1;
+}
+
+
 /* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */ /* INDEX: */
 /* TERMINA EL CONTENIDO DEL INDEX */
 
@@ -385,3 +431,135 @@ header nav .itemNav {
 
 
 
+/* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */
+/* Empiezan los Media Queries */
+
+/*INICIO DEL HEADER MEDIA QUERIES */
+
+/* MENU MOBILE */
+@media (max-width:768px) {
+
+    .cabecera {
+        width: 100%;
+        display: flex;
+    }
+    .cabecera .logo {
+        width: 50%;
+    }
+    .cabecera label {
+        display: flex;
+    }
+    .navegacionNav {
+        display: none;
+    }
+    #checkMenuu:checked ~ .navegacionNav{
+        display: flex;
+        background: #1c1f34;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+/*FIN DEL HEADER MEDIA QUERIES */
+/* ----------------------------------------------------------- */
+/* INICIO DEL FOOTER MEDIA QUERIES */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: 200vh;
+    }
+
+    .footer .footerNav {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        align-content: start;
+        width: 100%;
+        height: 95vh;
+        font-size: 0.45rem;
+    }
+    .footerNav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        padding: 0;
+    }
+    .itemFooterNav {
+        display: flex;
+        align-self: start;
+        justify-self: start;
+    }
+    .newsletter {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+        justify-content: start;
+        justify-items: start;
+        flex-direction: column;
+    }
+/*FIN DEL FOOTER MEDIA QUERIES  */
+/* ------------------------------------------------- */
+/* INICIO DE PAGINA CONTACTO */
+    .secForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 155vh;
+    }
+    .secFormText {
+        display: flex;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .secFormText h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    .secFormText p {
+        padding: 1em;
+        padding-top: 1em;
+        font-size: 1.40em;
+        height: 19vh;
+    }
+
+    .ayudanos {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.40em;
+
+    }
+    .mb-3 {
+        width: 100%;
+    }
+    .form-floating {
+        display: flex;
+        width: 100%;
+        padding-top: 0.7em;
+        height: 40vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+
+
+
+
+
+}
