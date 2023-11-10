@@ -345,6 +345,57 @@ header nav .itemNav {
 
 
 
+
+
+
+
+/* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ 
+/* EMPIEZA LA GALERIA */
+.secGaleria {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #8ba0e7;
+}
+.galeriaText  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10em;
+    background-color: #515a87;
+    margin-bottom: 3em;
+}
+.galeriaText h1 {
+    font-size: 5em;
+    font-family: "DevilCandle";
+    text-align: center;
+    color: black;
+}
+
+.contenedorCarrusel {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* TERMINA LA GALERIA */ 
+/* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ 
+
 /* EMPIEZA EL CONTACTO */
 /* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO */
 .secForm {
@@ -410,25 +461,6 @@ header nav .itemNav {
 }
 /* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO */
 /* FIN DEL CONTACTO */
-
-
-.color1 {
-    color: #120907;
-}
-.color2 {
-    color: #1c1f34;
-}
-.color3 {
-    color: #515a87;
-}
-.color4 {
-    color: #8ba0e7;
-}
-.color5 {
-    color: #bfdded;
-}
-
-
 
 
 /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */
@@ -555,8 +587,20 @@ header nav .itemNav {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+/* FINAL DE PAGINA CONTACTO */
 
+/* INICIO DE PAGINA GALERIA */
+.galeriaText {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 15vh;
 
+}
+.contenedorCarrusel {
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+}
 
 
 
