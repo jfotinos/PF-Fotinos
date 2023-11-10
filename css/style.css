@@ -343,11 +343,71 @@ header nav .itemNav {
 /* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */ /* INTEGRANTES: */
 /* TERMINA EL CONTENIDO DE INTEGRANTES */
 
+/* DISCOGRAFIA *//* DISCOGRAFIA *//* DISCOGRAFIA *//* DISCOGRAFIA *//* DISCOGRAFIA */
+/* EMPIEZA LA DISCOGRAFIA */
+.contenidoDiscografia{
+    background-color: #8ba0e7;
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.discoHead {
+    width: 100%;
+    height: 34vh;
+}
+.discoHead h1 {
+    font-size: 5em;
+    font-family: "DevilCandle";
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    color: black;
+}
+.discoHead p {
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 10%;
+    margin-top: 1em;
+
+}
+
+.discoHead iframe {
+    display: inline-block;
+    position: absolute;
+    top: 5.5em;
+    right: 1em;
+    width: 20%;
+    height: 22em;
+    margin-left: 7%;
+    
+}
+
+.secDiscos {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100vh;
+
+}
+
+.secDiscos iframe {
+    height: 50vh;
+    width: 40em;
+    padding: 1em;
+    margin: 2em;
+}
 
 
 
 
 
+/* TERMINA LA DISCOGRAFIA */
+/* DISCOGRAFIA *//* DISCOGRAFIA *//* DISCOGRAFIA *//* DISCOGRAFIA *//* DISCOGRAFIA *//* DISCOGRAFIA */
 
 /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ 
 /* EMPIEZA LA GALERIA */
@@ -395,6 +455,26 @@ header nav .itemNav {
 
 /* TERMINA LA GALERIA */ 
 /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ 
+
+
+
+/* EMPIEZA  GIRAS */
+
+.secGiras{
+    background-color: #8ba0e7;
+}
+
+
+
+
+
+
+
+
+
+/* TERMINA GIRAS */ 
+
+
 
 /* EMPIEZA EL CONTACTO */
 /* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO */
@@ -587,9 +667,9 @@ header nav .itemNav {
         margin-bottom: 0;
         padding-bottom: 0;
     }
-/* FINAL DE PAGINA CONTACTO */
+/* FINAL DE PAGINA CONTACTO MEDIA QUERIES */
 
-/* INICIO DE PAGINA GALERIA */
+/* INICIO DE PAGINA GALERIA MEDIA QUERIES */
 .galeriaText {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -601,9 +681,7 @@ header nav .itemNav {
     padding-top: 0;
     margin-top: 0;
 }
-
-
-
-
+/* FINAL DE PAGINA GALERIA MEDIA QUERIES */
 
 }
+/* FIN DE LOS MEDIA QUERIES */
