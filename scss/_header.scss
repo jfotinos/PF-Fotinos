@@ -1,0 +1,52 @@
+// Header
+#top {
+    display: flex;
+    position: sticky;
+    top: 0; 
+    z-index: 10;
+    width: 100%;
+}
+.cabecera {
+    display: flex;
+    background-color: #1c1f34;
+    border: solid  10px #1c1f34;
+    height: 5em;
+    justify-content:space-between ;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+        width: 25%;
+        border-radius: 2rem;
+    }
+    // Nav Header
+    nav {
+        width: 75%;
+        height: 50px;
+        display: flex;
+        padding: 5px;   
+        align-items: start;
+        justify-content: end;
+        .itemNav {
+            display: inline-block;
+            padding: 15px 43px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            a{
+                text-decoration:none;
+                color: white;
+                &:hover{
+                    color: #8ba0e7;
+                }
+            }
+        }
+        #checkMenuu {
+            display: none;
+            }
+        i {
+            font-size: 3em;
+            color: white;
+        }
+    }
+}

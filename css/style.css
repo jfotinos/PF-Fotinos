@@ -1,3 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+#top {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
 
+.cabecera {
+  display: flex;
+  background-color: #1c1f34;
+  border: solid 10px #1c1f34;
+  height: 5em;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cabecera .logo {
+  width: 25%;
+  border-radius: 2rem;
+}
+.cabecera nav {
+  width: 75%;
+  height: 50px;
+  display: flex;
+  padding: 5px;
+  align-items: start;
+  justify-content: end;
+}
+.cabecera nav .itemNav {
+  display: inline-block;
+  padding: 15px 43px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cabecera nav .itemNav a {
+  text-decoration: none;
+  color: white;
+}
+.cabecera nav .itemNav a:hover {
+  color: #8ba0e7;
+}
+.cabecera nav #checkMenuu {
+  display: none;
+}
+.cabecera nav i {
+  font-size: 3em;
+  color: white;
+}
+
+.footer {
+  background-color: #1c1f34;
+  display: flex;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+  height: 95vh;
+  justify-content: space-between;
+  justify-items: center;
+}
+.footer .footerNav {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+  height: 90vh;
+  justify-content: end;
+}
+.footer .footerNav .itemFooterNav {
+  font-family: "DevilCandle";
+  font-size: 390%;
+  margin: 35px 70px 29px;
+}
+.footer .footerNav ul {
+  list-style: none;
+}
+.footer .footerNav ul a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footerNav ul a:hover {
+  color: #8ba0e7;
+}
+.footer .newsletter {
+  display: flex;
+  width: 50%;
+  margin-right: 3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+.footer .newsletter h2 {
+  text-align: center;
+  font-size: 4em;
+  font-style: italic;
+  color: white;
+}
+.footer .newsletter input {
+  background-color: #bfdded;
+}
+.footer .newsletter .footerP {
+  color: white;
+  font-size: 21px;
+  text-align: center;
+}
+.footer .newsletter .contactBotoncitos {
+  width: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Importar fuentes de google font */
+@font-face {
+  font-family: "DevilCandle";
+  src: url(../assets/fonts/devilCandle.otf);
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p::selection {
+  background-color: #bfdded;
+  color: black;
+}
+
+.contenedorGrande {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-right: solid 10px #1c1f34;
+}
+
+.imgBackground {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+  height: 79rem;
+  background-size: contain;
+  background-image: url("../assets/images/imagineDragonsConcert.jpg");
+  background-repeat: no-repeat;
+}
+
+.boxBiog {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.655);
+}
+
+#titleBio {
+  font-size: 250%;
+  font-family: "DevilCandle";
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.biog {
+  font-size: 21px;
+  margin: 0px 15px 15px;
+  color: black;
+}
+
+.sectionss {
+  background-color: black;
+  margin-top: 0px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.titleSections {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 350%;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  color: #120907;
+  justify-content: center;
+  background-color: #515a87;
+}
+
+.imagen-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.imagen-contenedor a {
+  text-decoration: none;
+  margin: 50px 120px 50px 50px;
+}
+.imagen-contenedor a:hover {
+  border: #bfdded solid 8px;
+  border-radius: 1rem;
+}
+.imagen-contenedor a h6 {
+  text-align: center;
+  font-size: 2rem;
+  background: #bfdded;
+  color: #1c1f34;
+}
+.imagen-contenedor img {
+  width: 310px;
+  height: auto;
+  opacity: 0.85;
+}
+.imagen-contenedor img:hover {
+  opacity: 1;
+}
+
+.contenidoIntegrantes {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #120907;
+}
+.contenidoIntegrantes h1 {
+  font-size: 300%;
+  font-family: "DevilCandle";
+  text-align: center;
+  padding: 1rem;
+  color: #bfdded;
+}
+
+.integrantesBios div {
+  align-items: center;
+  justify-content: space-between;
+}
+.integrantesBios img {
+  display: flex;
+  height: 43vh;
+}
+
+.danReynolds {
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  font-size: 23px;
+  background-color: #515a87;
+  justify-items: end;
+}
+.danReynolds p {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+.wayneSermon {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  font-size: 23px;
+  background-color: #8ba0e7;
+}
+.wayneSermon p {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+
+.benMcKee {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  font-size: 23px;
+  background-color: #515a87;
+  justify-items: end;
+}
+.benMcKee p {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+.danielPlatzman {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  font-size: 23px;
+  background-color: #8ba0e7;
+}
+.danielPlatzman p {
+  padding-right: 50px;
+  padding-left: 0px;
+}
+
+.contenidoDiscografia {
+  background-color: #8ba0e7;
+  width: 100%;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.discoHead {
+  width: 100%;
+  height: 34vh;
+}
+.discoHead h1 {
+  font-size: 5em;
+  font-family: "DevilCandle";
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+}
+.discoHead p {
+  display: inline-block;
+  font-size: 2em;
+  margin-left: 10%;
+  margin-top: 1em;
+}
+.discoHead iframe {
+  display: inline-block;
+  position: absolute;
+  top: 5.5em;
+  right: 1em;
+  width: 20%;
+  height: 22em;
+  margin-left: 7%;
+}
+
+.secDiscos {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100vh;
+}
+.secDiscos iframe {
+  height: 50vh;
+  width: 40em;
+  padding: 1em;
+  margin: 2em;
+}
+
+.secGaleria {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #8ba0e7;
+}
+
+.galeriaText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10em;
+  background-color: #515a87;
+  margin-bottom: 3em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 15vh;
+}
+.galeriaText h1 {
+  font-size: 5em;
+  font-family: "DevilCandle";
+  text-align: center;
+  color: black;
+}
+
+.contenedorCarrusel {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.secGiras {
+  background-color: #8ba0e7;
+}
+
+.secForm {
+  display: flex;
+  align-items: start;
+  background-color: #8ba0e7;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 155vh;
+}
+
+.secFormText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 5%;
+  color: #120907;
+  display: flex;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.secFormText h1 {
+  font-size: 4em;
+  font-family: "DevilCandle";
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1c1f34;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.secFormText p {
+  padding: 1em;
+  padding-top: 1em;
+  font-size: 1.4em;
+  height: 19vh;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.form-floating {
+  display: flex;
+  width: 100%;
+  padding-top: 0.7em;
+  height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.form-floating .form-control {
+  height: 200px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.ayudanos {
+  padding-right: 10%;
+  width: 35%;
+  margin-top: 10%;
+  width: 100%;
+  margin-top: 0;
+  margin-right: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4em;
+}
+.ayudanos div label {
+  font-weight: bold;
+  color: black;
+}
+.ayudanos div input {
+  background-color: #bfdded;
+}
+.ayudanos div textarea {
+  background-color: #bfdded;
+}
+
+.contactBotoncitos {
+  width: 100%;
+}
+.contactBotoncitos button {
+  background-color: #bfdded;
+  color: #120907;
+}
+.contactBotoncitos button:hover {
+  background-color: #515a87;
+}
+
+@media (max-width: 768px) {
+  .cabecera {
+    width: 100%;
+    display: flex;
+  }
+}
+#checkMenuu:checked ~ .navegacionNav {
+  display: flex;
+  background: #1c1f34;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.mb-3 {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

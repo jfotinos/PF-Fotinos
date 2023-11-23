@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- Custon styles -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Imagine dragons - Inicio</title>
+    <title>Inicio - Imagine dragons</title>
 </head>
 
 <body>
@@ -20,9 +20,9 @@
 <!--------------------------------------------------------------------------------------------------------------->
 <header id="top">
     <div class="cabecera">    
-            <img src="./assets/images/logo.jpg" alt="Logo" class="logo"/>
-            <nav>
-            <!-- Menu mobile -->
+        <img src="./assets/images/logo.jpg" alt="Logo" class="logo"/>
+        <nav>
+<!-- Menu mobile y desktop -->
             <input type="checkbox" id="checkMenuu">
             
             <ul class="navegacionNav">
@@ -33,13 +33,14 @@
                 <li class="itemNav"><a href="./pages/giras.html">Giras</a></li>
                 <li class="itemNav"><a href="./pages/contacto.html">Ayúdanos!</a></li>
             </ul>
+<!-- Termina menu desktop -->
             <label for="checkMenuu">
                 <i class="bx bx-menu"></i>
-                <!-- Termina menu mobile  -->
             </label>
+<!-- Termina menu mobile  -->
         </nav>
     </div>
-    </header>
+</header>
     
 <!--                                            ||Fin del Header||                                             -->
 
@@ -117,24 +118,22 @@
 
 <!-- Empieza sección Newsletter -->
 
-<div class="newsletter">
-<h2>Newsletter</h2>
-<form action="" method="post">
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"></label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+    <div class="newsletter">
+        <h2>Newsletter</h2>
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+            </div>
+            <section class="footerP">
+                <p>¡Regístrate en nuestra newsletter para recibir notificaciones instantáneas cada vez que subamos nuevo contenido! </p>
+                <p>De esta manera, te mantendremos al tanto de las últimas noticias, lanzamientos, todo sobre sus conciertos y mucho más.</p>
+            </section>
+            <div class="d-grid gap-2 col-6 mx-auto contactBotoncitos">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
     </div>
-    <section class="footerP">
-        <p>¡Regístrate en nuestra newsletter para recibir notificaciones instantáneas cada vez que subamos nuevo contenido! </p>
-        <p>De esta manera, te mantendremos al tanto de las últimas noticias, lanzamientos, todo sobre sus conciertos y mucho más.</p>
-    </section>
-
-    <div class="d-grid gap-2 col-6 mx-auto contactBotoncitos">
-        <button class="btn btn-primary" type="submit">Enviar</button>
-    </div>
-</form>
-</div>
-
 <!-- Termina sección Newsletter -->
 </div>
 
