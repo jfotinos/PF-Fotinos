@@ -40,7 +40,7 @@
   color: white;
 }
 .cabecera nav .itemNav a:hover {
-  color: #8ba0e7;
+  color: rgb(184, 125, 235);
 }
 .cabecera nav #checkMenuu {
   display: none;
@@ -80,7 +80,7 @@
   color: white;
 }
 .footer .footerNav ul a:hover {
-  color: #8ba0e7;
+  color: rgb(184, 125, 235);
 }
 .footer .newsletter {
   display: flex;
@@ -108,16 +108,16 @@
   width: 50%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* Importar fuentes de google font */
 @font-face {
   font-family: "DevilCandle";
   src: url(../assets/fonts/devilCandle.otf);
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -127,27 +127,23 @@ p::selection {
   color: black;
 }
 
-.contenedorGrande {
+.contenedorGrande, .contenedorGrande .imgBackground {
   display: flex;
   width: 100%;
   margin: 0;
   padding: 0;
   border-right: solid 10px #1c1f34;
 }
-
-.imgBackground {
-  display: flex;
-  padding: 0;
-  margin: 0;
+.contenedorGrande .imgBackground {
   justify-content: center;
   width: 100%;
-  height: 79rem;
+  height: 78.9rem;
   background-size: contain;
   background-image: url("../assets/images/imagineDragonsConcert.jpg");
   background-repeat: no-repeat;
+  border: none;
 }
-
-.boxBiog {
+.contenedorGrande .imgBackground .boxBiog {
   width: 45%;
   height: 100vh;
   display: flex;
@@ -157,29 +153,33 @@ p::selection {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.655);
 }
-
-#titleBio {
+.contenedorGrande .imgBackground .boxBiog #titleBio {
   font-size: 250%;
   font-family: "DevilCandle";
   text-align: center;
   margin-bottom: 20px;
   color: black;
 }
-
-.biog {
+.contenedorGrande .imgBackground .boxBiog .biog {
   font-size: 21px;
   margin: 0px 15px 15px;
   color: black;
 }
+.contenedorGrande .imgBackground .boxBiog a {
+  color: #8ba0e7;
+}
+.contenedorGrande .imgBackground .boxBiog a:hover {
+  cursor: pointer;
+  color: rgb(184, 125, 235);
+}
 
 .sectionss {
-  background-color: black;
+  background-color: #120907;
   margin-top: 0px;
   height: auto;
   margin-bottom: 0px;
 }
-
-.titleSections {
+.sectionss .titleSections {
   display: flex;
   width: 100%;
   height: 100px;
@@ -193,33 +193,31 @@ p::selection {
   justify-content: center;
   background-color: #515a87;
 }
-
-.imagen-contenedor {
+.sectionss .imagenContenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
 }
-.imagen-contenedor a {
+.sectionss .imagenContenedor a {
   text-decoration: none;
   margin: 50px 120px 50px 50px;
 }
-.imagen-contenedor a:hover {
-  border: #bfdded solid 8px;
-  border-radius: 1rem;
+.sectionss .imagenContenedor a:hover {
+  transform: scale(1.15);
 }
-.imagen-contenedor a h6 {
+.sectionss .imagenContenedor a h6 {
   text-align: center;
   font-size: 2rem;
   background: #bfdded;
   color: #1c1f34;
 }
-.imagen-contenedor img {
+.sectionss .imagenContenedor a img {
   width: 310px;
   height: auto;
   opacity: 0.85;
 }
-.imagen-contenedor img:hover {
+.sectionss .imagenContenedor a img:hover {
   opacity: 1;
 }
 
@@ -229,68 +227,6 @@ p::selection {
   flex-direction: column;
   align-items: center;
   background-color: #120907;
-}
-.contenidoIntegrantes h1 {
-  font-size: 300%;
-  font-family: "DevilCandle";
-  text-align: center;
-  padding: 1rem;
-  color: #bfdded;
-}
-
-.integrantesBios div {
-  align-items: center;
-  justify-content: space-between;
-}
-.integrantesBios img {
-  display: flex;
-  height: 43vh;
-}
-
-.danReynolds {
-  display: grid;
-  grid-template-columns: 8fr 3fr;
-  font-size: 23px;
-  background-color: #515a87;
-  justify-items: end;
-}
-.danReynolds p {
-  padding-left: 30px;
-  padding-right: 0px;
-}
-
-.wayneSermon {
-  display: grid;
-  grid-template-columns: 3fr 8fr;
-  font-size: 23px;
-  background-color: #8ba0e7;
-}
-.wayneSermon p {
-  padding-right: 20px;
-  padding-left: 0px;
-}
-
-.benMcKee {
-  display: grid;
-  grid-template-columns: 8fr 2fr;
-  font-size: 23px;
-  background-color: #515a87;
-  justify-items: end;
-}
-.benMcKee p {
-  padding-left: 30px;
-  padding-right: 0px;
-}
-
-.danielPlatzman {
-  display: grid;
-  grid-template-columns: 2fr 8fr;
-  font-size: 23px;
-  background-color: #8ba0e7;
-}
-.danielPlatzman p {
-  padding-right: 50px;
-  padding-left: 0px;
 }
 
 .contenidoDiscografia {

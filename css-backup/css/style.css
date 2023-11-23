@@ -230,37 +230,37 @@ header nav .itemNav {
 
 }
 
-.imagen-contenedor {
+.imagenContenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
 }
 
-.imagen-contenedor a {
+.imagenContenedor a {
     text-decoration: none;
     margin: 50px 120px 50px 50px;
 }
 /* Pseudoclase */
-.imagen-contenedor a:hover {
+.imagenContenedor a:hover {
     border:#bfdded solid 8px;
     border-radius: 1rem;
 }
 
-.imagen-contenedor a h6 {
+.imagenContenedor a h6 {
     text-align: center;
     font-size: 2rem;
     background: #bfdded;
     color: #1c1f34;
 }
 
-.imagen-contenedor img {
+.imagenContenedor img {
     width: 310px;
     height: auto;
     opacity: .85;
 }
 /* Pseudoclase */
-.imagen-contenedor img:hover {
+.imagenContenedor img:hover {
     opacity: 1;
 }
 

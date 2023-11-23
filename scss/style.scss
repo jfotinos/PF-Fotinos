@@ -1,98 +1,102 @@
+// Imports:
 @import "./header";
 @import "./footer";
+@import "./variables";
+@import "./fonts";
 
+// RESET
 * {
 	margin: 0;
 	padding: 0;
 }
-/* Importar fuentes de google font */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-
-						@font-face {
-							font-family: "DevilCandle";
-							src: url(../assets/fonts/devilCandle.otf);
-						}
 body {
 	font-family: 'Ubuntu', sans-serif;
 }
 p {
 	&::selection {
-		background-color: #bfdded;
+		background-color: $color5;
 		color: black;
 	}
 }
 
+// INICIO //// INICIO //// INICIO //// INICIO //// INICIO //// INICIO // 
 .contenedorGrande {
-	display: flex;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	border-right: solid 10px #1c1f34;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-right: solid 10px #1c1f34;
+	.imgBackground {
+		@extend .contenedorGrande;
+		justify-content: center;
+		width: 100%;
+		height:78.9rem;
+		background-size: contain;
+		background-image: url("../assets/images/imagineDragonsConcert.jpg");
+		background-repeat: no-repeat;
+		border: none;
+		.boxBiog{
+			width: 45%;
+			height: 100vh;
+			display:flex;
+			margin-top: 2%;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: rgba(255, 255, 255, 0.655);
+			#titleBio {
+				font-size: 250%;
+				font-family: "DevilCandle";
+				text-align: center;
+				margin-bottom: 20px;
+				color: black;
+			}
+			.biog {
+				font-size: 21px;
+				margin: 0px 15px 15px;
+				color: black;
+				}
+			a {
+				color: $color4;
+				&:hover {
+					cursor: pointer;
+					color: $color0;
+				}
+			}
+		}
+	}
 }
-.imgBackground {
-	display: flex;
-	padding: 0;
-	margin: 0;
-	justify-content: center;
-	width: 100%;
-	height: 79rem;
-	background-size: contain;
-	background-image: url("../assets/images/imagineDragonsConcert.jpg");
-	background-repeat: no-repeat;
-}
-.boxBiog {
-	width: 45%;
-	height: 100vh;
-	display: flex;
-	margin-top: 2%;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	background-color: rgba(255, 255, 255, 0.655);
-}
-#titleBio {
-	font-size: 250%;
-	font-family: "DevilCandle";
-	text-align: center;
-	margin-bottom: 20px;
-	color: black;
-}
-.biog {
-	font-size: 21px;
-	margin: 0px 15px 15px;
-	color: black;
-}
+// Empieza seccion de secciones
 .sectionss {
-	background-color: black;
-	margin-top: 0px;
-	height: auto;
-	margin-bottom: 0px;
-}
-.titleSections {
-	display: flex;
-	width: 100%;
-	height: 100px;
-	font-weight: bold;
-	font-family: 'Ubuntu', sans-serif;
-	font-style: italic;
-	font-size: 350%;
-	padding-top: 30px;
-	margin-bottom: 30px;
-	color: #120907;
-	justify-content: center;
-	background-color: #515a87;
-}
-.imagen-contenedor {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: flex-end;
-	a {
-		text-decoration: none;
-		margin: 50px 120px 50px 50px;
-		&:hover {
-			border: #bfdded solid 8px;
-			border-radius: 1rem;
+    background-color: $color1;
+    margin-top: 0px;
+    height: auto;
+    margin-bottom: 0px;
+	.titleSections {
+		display: flex;
+		width: 100%;
+		height: 100px;
+		font-weight:bold;
+		font-family: 'Ubuntu', sans-serif;
+		font-style: italic;
+		font-size: 350%;
+		padding-top: 30px;
+		margin-bottom: 30px;
+		color: $color1;
+		justify-content:center ;
+		background-color: $color3;
+	}
+	.imagenContenedor {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-end;
+		a {
+			text-decoration: none;
+			margin: 50px 120px 50px 50px;
+			&:hover {
+				transform:scale(1.15);
+				
 		}
 		h6 {
 			text-align: center;
@@ -100,84 +104,101 @@ p {
 			background: #bfdded;
 			color: #1c1f34;
 		}
-	}
-	img {
-		width: 310px;
-		height: auto;
-		opacity: .85;
-		&:hover {
-			opacity: 1;
+		img {
+			width: 310px;
+			height: auto;
+			opacity: .85;
+			&:hover {
+				opacity: 1;
+				}
+			}
 		}
 	}
 }
+// INICIO //// INICIO //// INICIO //// INICIO //// INICIO //// INICIO //
+
+// Integrantes //// Integrantes //// Integrantes //// Integrantes //// Integrantes //
 .contenidoIntegrantes {
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	align-items: center;
-	background-color: #120907;
-	h1 {
-		font-size: 300%;
-		font-family: "DevilCandle";
-		text-align: center;
-		padding: 1rem;
-		color: #bfdded;
-	}
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #120907;
 }
-.integrantesBios {
-	div {
-		align-items: center;
-		justify-content: space-between;
-	}
-	img {
-		display: flex;
-		height: 43vh;
-	}
-}
-.danReynolds {
-	display: grid;
-	grid-template-columns: 8fr 3fr;
-	font-size: 23px;
-	background-color: #515a87;
-	justify-items: end;
-	p {
-		padding-left: 30px;
-		padding-right: 0px;
-	}
-}
-.wayneSermon {
-	display: grid;
-	grid-template-columns: 3fr 8fr;
-	font-size: 23px;
-	background-color: #8ba0e7;
-	p {
-		padding-right: 20px;
-		padding-left: 0px;
-	}
-}
-.benMcKee {
-	display: grid;
-	grid-template-columns: 8fr 2fr;
-	font-size: 23px;
-	background-color: #515a87;
-	justify-items: end;
-	p {
-		padding-left: 30px;
-		padding-right: 0px;
-	}
-}
-.danielPlatzman {
-	display: grid;
-	grid-template-columns: 2fr 8fr;
-	font-size: 23px;
-	background-color: #8ba0e7;
-	p {
-		padding-right: 50px;
-		padding-left: 0px;
-	}
-}
+
+
+
+// .contenidoIntegrantes {
+// 	display: flex;
+// 	width: 100%;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	background-color: #120907;
+// 	h1 {
+// 		font-size: 300%;
+// 		font-family: "DevilCandle";
+// 		text-align: center;
+// 		padding: 1rem;
+// 		color: $color5;
+// 	}
+// }
+// .integrantesBios {
+// 	div {
+// 		align-items: center;
+// 		justify-content: space-between;
+// 	}
+// 	img {
+// 		display: flex;
+// 		height: 43vh;
+// 	}
+// }
+// .danReynolds {
+// 	display: grid;
+// 	grid-template-columns: 8fr 3fr;
+// 	font-size: 23px;
+// 	background-color: $color3;
+// 	justify-items: end;
+// 	p {
+// 		padding-left: 30px;
+// 		padding-right: 0px;
+// 	}
+// }
+// .wayneSermon {
+// 	display: grid;
+// 	grid-template-columns: 3fr 8fr;
+// 	font-size: 23px;
+// 	background-color: $color4;
+// 	p {
+// 		padding-right: 20px;
+// 		padding-left: 0px;
+// 	}
+// }
+// .benMcKee {
+// 	display: grid;
+// 	grid-template-columns: 8fr 2fr;
+// 	font-size: 23px;
+// 	background-color: $color3;
+// 	justify-items: end;
+// 	p {
+// 		padding-left: 30px;
+// 		padding-right: 0px;
+// 	}
+// }
+// .danielPlatzman {
+// 	display: grid;
+// 	grid-template-columns: 2fr 8fr;
+// 	font-size: 23px;
+// 	background-color: $color4;
+// 	p {
+// 		padding-right: 50px;
+// 		padding-left: 0px;
+// 	}
+// }
+
+
+// Integrantes //// Integrantes //// Integrantes //// Integrantes //// Integrantes //
 .contenidoDiscografia {
-	background-color: #8ba0e7;
+	background-color: $color4;
 	width: 100%;
 	height: 100vw;
 	display: flex;
@@ -233,7 +254,7 @@ p {
 	align-items: center;
 	width: 100%;
 	height: 100vh;
-	background-color: #8ba0e7;
+	background-color: $color4;
 }
 .galeriaText {
 	display: flex;
@@ -241,7 +262,7 @@ p {
 	align-items: center;
 	width: 100%;
 	height: 10em;
-	background-color: #515a87;
+	background-color: $color3;
 	margin-bottom: 3em;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -265,12 +286,12 @@ p {
 	margin-top: 0;
 }
 .secGiras {
-	background-color: #8ba0e7;
+	background-color: $color4;
 }
 .secForm {
 	display: flex;
 	align-items: start;
-	background-color: #8ba0e7;
+	background-color: $color4;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
@@ -289,7 +310,7 @@ p {
 	width: 40%;
 	margin-left: 5%;
 	margin-top: 5%;
-	color: #120907;
+	color: $color1;
 	display: flex;
 	width: 100%;
 	font-size: 0.8rem;
@@ -298,7 +319,7 @@ p {
 		font-family: "DevilCandle";
 		text-align: center;
 		margin-bottom: 40px;
-		color: #1c1f34;
+		color: $color2;
 		margin-top: 0;
 		margin-bottom: 0;
 		padding-top: 0;
@@ -344,20 +365,20 @@ p {
 			color: black;
 		}
 		input {
-			background-color: #bfdded;
+			background-color: $color5;
 		}
 		textarea {
-			background-color: #bfdded;
+			background-color: $color5;
 		}
 	}
 }
 .contactBotoncitos {
 	width: 100%;
 	button {
-		background-color: #bfdded;
+		background-color: $color5;
 		color: #120907;
 		&:hover {
-			background-color: #515a87;
+			background-color: $color3;
 		}
 	}
 }
@@ -371,7 +392,7 @@ p {
 	&:checked {
 		& ~ .navegacionNav {
 			display: flex;
-			background: #1c1f34;
+			background: $color2;
 			width: 100%;
 			height: 100vh;
 			position: absolute;
@@ -386,3 +407,6 @@ p {
 .mb-3 {
 	width: 100%;
 }
+
+
+@import "./queries"
