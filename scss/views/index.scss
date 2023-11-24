@@ -69,10 +69,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: flex-end;
+		align-items: flex-start;
 		a {
 			text-decoration: none;
-			margin: 50px 120px 50px 50px;
+			margin: 50px 80px 50px 50px;
 			&:hover {
 				transform:scale(1.15);
 				

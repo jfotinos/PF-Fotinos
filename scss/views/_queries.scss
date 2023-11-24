@@ -1,0 +1,156 @@
+/*INICIO DEL HEADER */
+
+/* MENU MOBILE */
+@media (max-width:768px) {
+
+    .cabecera {
+        width: 100%;
+        display: flex;
+        .logo {
+            width: 50%;
+        }
+        nav {
+            .navegacionNav {
+                display: none;
+            }
+            i {
+                display: flex;
+            }
+            #checkMenuu:checked ~ .navegacionNav{
+                display: flex;
+                background: #1c1f34;
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                left: 0;
+                top: 60px;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+        }
+    }
+/*FIN DEL HEADER */
+
+/* INICIO DEL FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: 200vh;
+        .footerNav {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            align-content: start;
+            width: 100%;
+            height: 95vh;
+            font-size: 0.45rem;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: end;
+                padding: 0;
+                .itemFooterNav {
+                    display: flex;
+                    align-self: start;
+                    justify-self: start;
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                    margin: 60px 0 30px 30px;
+                }
+            }
+        }
+        .newsletter {
+            display: flex;
+            width: 100%;
+            height: 90vh;
+            justify-content: start;
+            justify-items: start;
+            flex-direction: column;
+        }
+    }
+/*FIN DEL FOOTER */
+
+
+/* INICIO DE PAGINA CONTACTO */
+    .container-fluid {
+        .secForm {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            width: 100%;
+            height: 170vh;
+            .secFormText {
+                display: flex;
+                align-content: center;
+                width: 100%;
+                font-size: 0.8rem;
+                margin-left: 0;
+                padding-left: 0;
+                .tituloContacto {
+                    width: 100%;
+                    height: auto;
+                    font-size: 2rem;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                    padding-top: 0;
+                }
+                p {
+                    padding: 1em;
+                    padding-top: 1em;
+                    font-size: 1.35em;
+                    height: 19vh;
+                    text-align: center;
+                }
+            }
+            .ayudanos {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.40em;
+                width: 100%;
+                align-items: center;
+                .mb-3 {
+                    width: 90%;
+                }
+                .form-floating {
+                    display: flex;
+                    width: 90%;
+                    padding-top: 0;
+                    height: 30vh;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    }
+                .contactBotoncitos {
+                    margin-top: 10%;
+                }
+                }
+    #floatingTextarea {
+        margin-top: -50px;
+        padding-top: 0;
+        }
+
+
+
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

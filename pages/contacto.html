@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="IMAGINE, DRAGONS, BANDA, ROCK, POP, MUSICA, FANDOM, REYNOLDS, DAN">
+    <meta name="description" content="Explora el fascinante mundo musical de Imagine Dragons en nuestra página. Descubre la historia de la banda, sus álbumes, éxitos y la energía única que han aportado al panorama musical. Conoce a los integrantes, y mantente al tanto de las últimas noticias y novedades sobre Imagine Dragons. ¡Sumérgete en la magia de su música y vive la experiencia Imagine Dragons con nosotros!">
+    <!-- FavIcon -->
     <link rel="shortcut icon" href="../assets/images/5.png">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Boxicons CSS -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <!--Bootstrap -->
@@ -20,9 +26,9 @@
 <!--------------------------------------------------------------------------------------------------------------->
 <header id="top">
     <div class="cabecera">    
-            <img src="../assets/images/logo.jpg" alt="Logo" class="logo"/>
+            <img src="../assets/images/logo.jpg" alt="Logo" class="animate__animated animate__bounceInRight logo"/>
             <nav>
-            <!-- Menu mobile -->
+<!-- Menu mobile y desktop -->
             <input type="checkbox" id="checkMenuu">
             
             <ul class="navegacionNav">
@@ -32,23 +38,23 @@
                 <li class="itemNav"><a href="./galeria.html">Galería</a></li>
                 <li class="itemNav"><a href="./contacto.html">Ayúdanos!</a></li>
             </ul>
+<!-- Termina menu desktop -->
             <label for="checkMenuu">
                 <i class="bx bx-menu"></i>
-                <!-- Termina menu mobile  -->
             </label>
+<!-- Termina menu mobile  -->
         </nav>
     </div>
-    </header>
+</header>
     <!--                                            ||Fin del Header||                                             -->
     
 <!-- _________________________________________________________________________________________________________ -->
 <!--                                           ||Inicio del Contenido||                                           -->
 <!--------------------------------------------------------------------------------------------------------------->
 <div class="container-fluid">
-<!-- ACA DEBERIA CREAR UN DIV CON UNA IMG? -->
     <section class="secForm">
-        <div class="secFormText biog">
-            <h1>¿Como puedes ayudarnos?</h1>
+        <div class="biog secFormText">
+            <h1 class="tituloContacto">¿Como puedes ayudarnos?</h1>
             <p>¡Hola, gracias por llegar a esta sección! Nos resulta de muchisima ayuda escuchar tu voz y conocer tus opiniones sobre nuestro blog. Tu feedback es esencial para nosotros. Queremos saber qué te gusta, qué te gustaría ver más y cómo podemos mejorar.
         A continuación, encontrarás un formulario donde puedes expresar tus ideas y deseos. ¡Esperamos tus comentarios!<p>
         </div>
@@ -98,28 +104,31 @@
 
 <!-- Empieza sección Newsletter -->
 
-<div class="newsletter">
-<h2>Newsletter</h2>
-<form action="" method="post">
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"></label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
-    </div>
-    <section class="footerP">
-        <p>¡Regístrate en nuestra newsletter para recibir notificaciones instantáneas cada vez que subamos nuevo contenido! </p>
-        <p>De esta manera, te mantendremos al tanto de las últimas noticias, lanzamientos, todo sobre sus conciertos y mucho más.</p>
-    </section>
+    <div class="newsletter">
+    <h2>Newsletter</h2>
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+            </div>
+            <section class="footerP">
+                <p>¡Regístrate en nuestra newsletter para recibir notificaciones instantáneas cada vez que subamos nuevo contenido! </p>
+                <p>De esta manera, te mantendremos al tanto de las últimas noticias, lanzamientos, todo sobre sus conciertos y mucho más.</p>
+            </section>
 
-    <div class="d-grid gap-2 col-6 mx-auto contactBotoncitos">
-        <button class="btn btn-primary" type="submit">Enviar</button>
+            <div class="d-grid gap-2 col-6 mx-auto contactBotoncitos">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
     </div>
-</form>
-</div>
-
 <!-- Termina sección Newsletter -->
 </div>
-
 <!--                                            ||Fin del Footer||                                             -->
+<!-- Animaciones JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- Bootstrap JS -->
 <script src="../js/bootstrap.js"></script>
 </body>
