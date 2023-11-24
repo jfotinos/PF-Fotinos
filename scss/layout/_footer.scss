@@ -1,4 +1,3 @@
-@import "./variables";
 .footer {
     background-color: #1c1f34; 
     display: flex;
@@ -13,11 +12,12 @@
         flex-direction: column;
         width: 45rem;
         height: 90vh;
-        justify-content: end;
+        justify-content: center;
         .itemFooterNav {
             font-family: "DevilCandle";
             font-size: 390%;
-            margin: 35px 70px 29px ;
+            margin: 9% 3%;
+
         }
         ul {
             list-style: none;

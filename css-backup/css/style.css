@@ -456,26 +456,6 @@ header nav .itemNav {
 /* TERMINA LA GALERIA */ 
 /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ /* GALERIA */ 
 
-
-
-/* EMPIEZA  GIRAS */
-
-.secGiras{
-    background-color: #8ba0e7;
-}
-
-
-
-
-
-
-
-
-
-/* TERMINA GIRAS */ 
-
-
-
 /* EMPIEZA EL CONTACTO */
 /* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO *//* CONTACTO */
 .secForm {
@@ -510,7 +490,6 @@ header nav .itemNav {
     height: 200px;
     margin-bottom: 50px;
     margin-top: 40px;
-
 }
 .ayudanos {
     padding-right: 10%;

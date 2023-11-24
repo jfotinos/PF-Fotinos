@@ -1,0 +1,31 @@
+// Resets, variables, mixins y utilidades
+
+// PALETA DE COLORES DE OSCURO A CLARO (1-5) 
+$color1: #120907;
+$color2: #1c1f34;
+$color3: #515a87;
+$color4: #8ba0e7;
+$color5: #bfdded;
+// Color para resaltar  
+$color0:rgb(184, 125, 235);
+// FIN DE PALETA DE COLORES 
+
+// RESET
+* {
+	margin: 0;
+	padding: 0;
+	&::selection {
+		background-color: $color5;
+		color: black;
+	}
+}
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+@mixin tamanio($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+// Se usa usando @include tamanio (30px, 30px); BORRAR ANTES DE ENTREGAR

@@ -1,0 +1,54 @@
+.contenidoIntegrantes {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #120907;
+}
+.contenidoIntegrantes h1 {
+  font-size: 300%;
+  font-family: "DevilCandle";
+  text-align: center;
+  padding: 1rem;
+  color: #bfdded;
+}
+.contenidoIntegrantes .integrantesBios div {
+  align-items: center;
+  justify-content: space-between;
+}
+.contenidoIntegrantes .integrantesBios .danReynolds, .contenidoIntegrantes .integrantesBios .benMcKee {
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  font-size: 23px;
+  background-color: #515a87;
+  justify-items: end;
+}
+.contenidoIntegrantes .integrantesBios .danReynolds p, .contenidoIntegrantes .integrantesBios .benMcKee p {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+.contenidoIntegrantes .integrantesBios .benMcKee {
+  grid-template-columns: 8fr 2fr;
+}
+.contenidoIntegrantes .integrantesBios .wayneSermon, .contenidoIntegrantes .integrantesBios .danielPlatzman {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  font-size: 23px;
+  background-color: #8ba0e7;
+}
+.contenidoIntegrantes .integrantesBios .wayneSermon p, .contenidoIntegrantes .integrantesBios .danielPlatzman p {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+.contenidoIntegrantes .integrantesBios .danielPlatzman {
+  grid-template-columns: 2fr 8fr;
+}
+.contenidoIntegrantes .integrantesBios .danielPlatzman p {
+  padding-right: 50px;
+}
+.contenidoIntegrantes .integrantesBios img {
+  display: flex;
+  height: 43vh;
+}
+
+/*# sourceMappingURL=integrantes.css.map */
