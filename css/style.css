@@ -49,9 +49,9 @@ body {
 .cabecera nav .itemNav {
   display: inline-block;
   padding: 15px 43px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: "DevilCandle";
+  font-size: 22px;
+  font-weight: 300;
 }
 .cabecera nav .itemNav a {
   text-decoration: none;
@@ -144,14 +144,14 @@ body {
   border: none;
 }
 .contenedorGrande .imgBackground .boxBiog {
-  width: 45%;
-  height: 100vh;
+  width: 55%;
+  height: 85vh;
   display: flex;
   margin-top: 2%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.655);
+  background-color: rgba(255, 255, 255, 0.711);
 }
 .contenedorGrande .imgBackground .boxBiog #titleBio {
   font-size: 250%;
@@ -165,12 +165,18 @@ body {
   margin: 0px 15px 15px;
   color: black;
 }
-.contenedorGrande .imgBackground .boxBiog a {
+.contenedorGrande .imgBackground .boxBiog .biog a {
   color: #8ba0e7;
 }
-.contenedorGrande .imgBackground .boxBiog a:hover {
+.contenedorGrande .imgBackground .boxBiog .biog a:hover {
   cursor: pointer;
   color: rgb(184, 125, 235);
+}
+.contenedorGrande .imgBackground .boxBiog .biog .cursiva {
+  font-style: italic;
+}
+.contenedorGrande .imgBackground .boxBiog .biog .negrita {
+  font-weight: 600;
 }
 
 .sectionss {
@@ -335,18 +341,57 @@ body {
   background-color: #8ba0e7;
 }
 .secGaleria h1, .secGaleria h2 {
-  font-size: 5em;
+  font-size: 5rem;
   font-family: "DevilCandle";
   text-align: center;
   color: black;
   margin-top: 1%;
   margin-bottom: 1%;
 }
+.secGaleria p {
+  font-size: 1.8rem;
+}
+.secGaleria p a {
+  color: #1c1f34;
+  font-style: italic;
+}
+.secGaleria p a:hover {
+  color: rgb(184, 125, 235);
+  font-weight: bold;
+}
 .secGaleria .contenidoMultimedia {
   display: flex;
-  justify-content: center;
-  width: 90%;
+  justify-content: space-between;
+  width: 80%;
   height: 80vh;
+}
+.secGaleria .contenidoMultimedia .instas {
+  width: 35%;
+}
+.secGaleria .contenidoMultimedia .instas ul {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  list-style-type: none;
+  flex-direction: column;
+}
+.secGaleria .contenidoMultimedia .instas ul li {
+  margin-top: 45px;
+}
+.secGaleria .contenidoMultimedia .instas ul li:hover {
+  border-radius: 50px;
+  transform: scale(1.15) translate(40px);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 50%, rgb(184, 125, 235) 100%);
+}
+.secGaleria .contenidoMultimedia .instas ul li a {
+  text-decoration: none;
+}
+.secGaleria .contenidoMultimedia .instas ul li a span {
+  font-weight: bold;
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 .secGaleria .contenidoMultimedia .contenedorCarrusel {
   display: flex;
@@ -370,6 +415,9 @@ body {
 .secGaleria .tiktoks div {
   margin-left: 45px;
   margin-right: 45px;
+}
+.secGaleria .mobileTT {
+  display: none;
 }
 
 .container-fluid {
@@ -465,12 +513,13 @@ body {
     height: 100vh;
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 80px;
     flex-direction: column;
     justify-content: start;
     align-items: start;
   }
   /*FIN DEL HEADER */
+  /*__________________________________________________ */
   /* INICIO DEL FOOTER */
   .footer {
     display: flex;
@@ -506,12 +555,156 @@ body {
   .footer .newsletter {
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     justify-content: start;
     justify-items: start;
     flex-direction: column;
   }
+  .footer .newsletter .mb-3 {
+    width: 95%;
+    margin-left: 2.5%;
+  }
   /*FIN DEL FOOTER */
+  /*__________________________________________________ */
+  /* INICIO DE PAGINA INICIO */
+  .contenedorGrande, .contenedorGrande .imgBackground {
+    width: 100%;
+    height: 260vh;
+    border: none;
+  }
+  .contenedorGrande .imgBackground {
+    background-color: #8ba0e7;
+  }
+  .contenedorGrande .imgBackground .boxBiog {
+    height: 280vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 12%;
+  }
+  .contenedorGrande .imgBackground .boxBiog #titleBio {
+    background-color: #bfdded;
+    border-radius: 50px;
+    padding: 5px;
+    margin-bottom: 8%;
+  }
+  .contenedorGrande .imgBackground .boxBiog .biog {
+    font-size: 1.2rem;
+  }
+  .contenedorGrande .imgBackground .boxBiog .biog a {
+    color: #bfdded;
+    font-weight: 300;
+  }
+  /* FIN DE PAGINA INICIO */
+  /*__________________________________________________ */
+  /* INICIO DE PAGINA INTEGRANTES */
+  .contenidoIntegrantes {
+    width: 100%;
+  }
+  .contenidoIntegrantes .integrantesBios {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contenidoIntegrantes .integrantesBios .danReynolds, .contenidoIntegrantes .integrantesBios .benMcKee {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1.15rem;
+    margin: 0%;
+  }
+  .contenidoIntegrantes .integrantesBios .danReynolds p, .contenidoIntegrantes .integrantesBios .benMcKee p {
+    margin: 2%;
+    padding: 0;
+  }
+  .contenidoIntegrantes .integrantesBios .wayneSermon, .contenidoIntegrantes .integrantesBios .danielPlatzman {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    margin: 0%;
+  }
+  .contenidoIntegrantes .integrantesBios .wayneSermon p, .contenidoIntegrantes .integrantesBios .danielPlatzman p {
+    margin: 2%;
+    padding: 0;
+  }
+  /* FIN DE PAGINA INTEGRANTES */
+  /*__________________________________________________ */
+  /* INICIO DE PAGINA DISCOGRAFIA */
+  .contenidoDiscografia {
+    width: 100%;
+    height: 350vh;
+  }
+  .contenidoDiscografia .discoHead h1, .contenidoDiscografia .discoHead .secGaleria h2, .secGaleria .contenidoDiscografia .discoHead h2 {
+    font-size: 3.5rem;
+  }
+  .contenidoDiscografia .discoHead p {
+    font-size: 1.25rem;
+  }
+  .contenidoDiscografia .discoHead a {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+    margin-left: 20%;
+    padding: 0;
+    position: initial;
+  }
+  .contenidoDiscografia .discoHead a img {
+    width: 55px;
+  }
+  .contenidoDiscografia .secDiscos {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10vh;
+  }
+  .contenidoDiscografia .secDiscos iframe {
+    width: 90%;
+    height: 360px;
+    margin: 0 0 8vh 2%;
+    padding: 0;
+    margin-bottom: 10vh;
+  }
+  /* FIN DE PAGINA DISCOGRAFIA */
+  /*__________________________________________________ */
+  /* INICIO DE PAGINA GALERIA */
+  .secGaleria {
+    height: 285vh;
+  }
+  .secGaleria h1, .secGaleria h2 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .secGaleria p {
+    font-size: 1.5rem;
+    margin: 2%;
+    text-align: center;
+  }
+  .secGaleria .contenidoMultimedia {
+    width: 100%;
+    height: 190vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .secGaleria .contenidoMultimedia .contenedorCarrusel {
+    width: 100%;
+    margin: 0;
+  }
+  .secGaleria .contenidoMultimedia .instas {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  .secGaleria .contenidoMultimedia .instas h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .secGaleria .contenidoMultimedia .instas ul {
+    width: 100%;
+  }
+  .secGaleria .tiktoks {
+    display: none;
+  }
+  .secGaleria .mobileTT {
+    display: flex;
+  }
+  /* FIN DE PAGINA GALERIA */
+  /*__________________________________________________ */
   /* INICIO DE PAGINA CONTACTO */
   .container-fluid .secForm {
     display: flex;
@@ -532,7 +725,7 @@ body {
   .container-fluid .secForm .secFormText .tituloContacto {
     width: 100%;
     height: auto;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 20px;
     margin-bottom: 0;
     padding-top: 0;
@@ -540,9 +733,9 @@ body {
   .container-fluid .secForm .secFormText p {
     padding: 1em;
     padding-top: 1em;
-    font-size: 1.35em;
+    font-size: 1.4em;
     height: 19vh;
-    text-align: center;
+    text-align: start;
   }
   .container-fluid .secForm .ayudanos {
     margin: 0;
@@ -556,6 +749,12 @@ body {
   .container-fluid .secForm .ayudanos .mb-3 {
     width: 90%;
   }
+  .container-fluid .secForm .ayudanos .querieAyuda {
+    position: relative;
+    top: 50px;
+    padding: 0;
+    margin: 0;
+  }
   .container-fluid .secForm .ayudanos .form-floating {
     display: flex;
     width: 90%;
@@ -565,12 +764,15 @@ body {
     padding-bottom: 0;
   }
   .container-fluid .secForm .ayudanos .contactBotoncitos {
-    margin-top: 10%;
+    margin-top: 7%;
+    width: 90%;
   }
   .container-fluid .secForm #floatingTextarea {
     margin-top: -50px;
     padding-top: 0;
   }
+  /* FIN DE PAGINA CONTACTO */
 }
+/*__________________________________________________ */
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,6 @@
 
 /* MENU MOBILE */
 @media (max-width:768px) {
-
     .cabecera {
         width: 100%;
         display: flex;
@@ -18,12 +17,12 @@
             }
             #checkMenuu:checked ~ .navegacionNav{
                 display: flex;
-                background: #1c1f34;
+                background: $color2;
                 width: 100%;
                 height: 100vh;
                 position: absolute;
                 left: 0;
-                top: 60px;
+                top: 80px;
                 flex-direction: column;
                 justify-content: start;
                 align-items: start;
@@ -31,7 +30,7 @@
         }
     }
 /*FIN DEL HEADER */
-
+/*__________________________________________________ */
 /* INICIO DEL FOOTER */
     .footer {
         display: flex;
@@ -66,15 +65,189 @@
         .newsletter {
             display: flex;
             width: 100%;
-            height: 90vh;
+            height: 85vh;
             justify-content: start;
             justify-items: start;
             flex-direction: column;
+            .mb-3 {
+                width: 95%;
+                margin-left: 2.5%;
+            }
         }
     }
 /*FIN DEL FOOTER */
+/*__________________________________________________ */
+/* INICIO DE PAGINA INICIO */
+    .contenedorGrande {
+        width: 100%;
+        height: 260vh;
+        border: none;
+        .imgBackground {
+            background-color: $color4;
+            .boxBiog{
+                height: 280vh;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0);
+                margin-top: 12%;
+                #titleBio {
+                    background-color: $color5;
+                    border-radius: 50px;
+                    padding: 5px;
+                    margin-bottom: 8%;
+                }
+                .biog {
+                        font-size: 1.2rem;
+                    a {
+                        color: $color5;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+/* FIN DE PAGINA INICIO */
+/*__________________________________________________ */
+/* INICIO DE PAGINA INTEGRANTES */
+    .contenidoIntegrantes {
+        width: 100%;
+        .integrantesBios {
+            width: 100%;
+            flex-direction: column;
+            .danReynolds {
+                display: flex;
+                flex-direction: column-reverse;
+                font-size: 1.15rem;
+                margin: 0% ;
+                p {
+                    margin: 2%;
+                    padding: 0;
+                }
+            }
+            .wayneSermon {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.15rem;
+                margin: 0%;
+                p {
+                    margin: 2%;
+                    padding: 0;
+                }
+            }
+        }
+    }
 
 
+
+
+
+
+
+
+
+
+
+
+/* FIN DE PAGINA INTEGRANTES */
+/*__________________________________________________ */
+/* INICIO DE PAGINA DISCOGRAFIA */
+.contenidoDiscografia {
+    width: 100%;
+    height: 350vh;
+    .discoHead {
+        h1 {
+            font-size: 3.5rem;
+        }
+        p {
+            font-size: 1.25rem;
+        }
+        a {
+            display: inline-block;
+            width: 20%;
+            margin: 0;
+            margin-left: 20%;
+            padding: 0;
+            position: initial;
+            img {
+                width: 55px;
+            }
+        }
+    }
+.secDiscos {
+    display: flex;
+    // height: 250vh;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10vh;
+    iframe {
+        width: 90%;
+        height: 360px;
+        margin: 0 0 8vh 2%;
+        padding: 0;
+        margin-bottom: 10vh;
+
+    }
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FIN DE PAGINA DISCOGRAFIA */
+/*__________________________________________________ */
+/* INICIO DE PAGINA GALERIA */
+    .secGaleria {
+        height: 285vh;
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 2%;
+            text-align: center;
+        }
+        .contenidoMultimedia {
+            width: 100%;
+            height: 190vh;
+            display: flex;
+            flex-direction: column-reverse;
+                .contenedorCarrusel {
+                    width: 100%;
+                    margin: 0;
+                }
+            .instas {
+                width: 100%;
+                margin-bottom: 5vh;
+                h2 {
+                    font-size: 2.5rem;
+                    width: 100%;
+                }
+                ul {
+                    width: 100%;
+                }
+            }
+        }
+        .tiktoks {
+            display: none;
+            }
+        .mobileTT {
+            display: flex;
+        }
+    }
+/* FIN DE PAGINA GALERIA */
+/*__________________________________________________ */
 /* INICIO DE PAGINA CONTACTO */
     .container-fluid {
         .secForm {
@@ -94,7 +267,7 @@
                 .tituloContacto {
                     width: 100%;
                     height: auto;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     margin-top: 20px;
                     margin-bottom: 0;
                     padding-top: 0;
@@ -102,9 +275,9 @@
                 p {
                     padding: 1em;
                     padding-top: 1em;
-                    font-size: 1.35em;
+                    font-size: 1.4em;
                     height: 19vh;
-                    text-align: center;
+                    text-align: start;
                 }
             }
             .ayudanos {
@@ -118,6 +291,12 @@
                 .mb-3 {
                     width: 90%;
                 }
+                .querieAyuda {
+                    position: relative;
+                    top: 50px;
+                    padding: 0;
+                    margin: 0;
+                }
                 .form-floating {
                     display: flex;
                     width: 90%;
@@ -127,30 +306,16 @@
                     padding-bottom: 0;
                     }
                 .contactBotoncitos {
-                    margin-top: 10%;
+                    margin-top: 7%;
+                    width: 90%;
                 }
                 }
-    #floatingTextarea {
-        margin-top: -50px;
-        padding-top: 0;
-        }
-
-
-
-
-
+        #floatingTextarea {
+            margin-top: -50px;
+            padding-top: 0;
+            }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    /* FIN DE PAGINA CONTACTO */
 }
+/*__________________________________________________ */

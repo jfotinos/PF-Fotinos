@@ -8,17 +8,57 @@
     height: 200vh;
     background-color: #8ba0e7;
     h1 {
-        font-size: 5em;
+        font-size: 5rem;
         font-family: "DevilCandle";
         text-align: center;
         color: black;
         margin-top: 1%;
         margin-bottom: 1%;
     }
+    p {
+        font-size: 1.8rem;
+        a {
+            color: $color2;
+            font-style: italic;
+            &:hover {
+                color: $color0;
+                font-weight: bold;
+            }
+        }
+    }
     .contenidoMultimedia {
         display: flex;
-        justify-content: center;
-        @include tamanio(90%,80vh);
+        justify-content:space-between;
+        @include tamanio(80%, 80vh);
+        .instas {
+            width: 35%;
+            ul {
+                width: 60%;
+                display: flex;
+                justify-content: end;
+                align-items: start;
+                list-style-type: none;
+                flex-direction: column;
+                li {
+                    &:hover {
+                        border-radius: 50px;
+                        transform: scale(1.15) translate(40px);
+                        // background-color: $color0;
+                        background: linear-gradient(90deg, rgba(255,255,255,1) 50%, $color0 100%);                        
+                    }
+                    margin-top: 45px;
+                    a {
+                        text-decoration:none;
+                        span {
+                            font-weight: bold;
+                            color: black;
+                            font-size: 1.4rem;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
         
         .contenedorCarrusel {
             display: flex;
@@ -47,5 +87,8 @@
             margin-left: 45px;
             margin-right: 45px;
         }
+    }
+    .mobileTT {
+        display: none;
     }
 }

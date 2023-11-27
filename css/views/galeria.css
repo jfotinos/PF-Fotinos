@@ -1,9 +1,9 @@
-/* Error: Undefined mixin.
+/* Error: Undefined variable.
  *    ,
- * 21 |         @include tamanio(90%,80vh);
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * 21 |             color: $color2;
+ *    |                    ^^^^^^^
  *    '
- *   scss\views\galeria.scss 21:9  root stylesheet */
+ *   scss\views\galeria.scss 21:20  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 21 \2502          @include tamanio(90%,80vh);\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\views\\galeria.scss 21:9  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 21 \2502              color: $color2;\d\a    \2502                     ^^^^^^^\a    \2575 \a   scss\\views\\galeria.scss 21:20  root stylesheet";
 }

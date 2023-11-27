@@ -54,48 +54,88 @@
 <section class="content-fluid secGaleria">
     <h1>Galería</h1>
     <div class="contenidoMultimedia">
-        <div class="contenedorCarrusel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>            
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/images/foto7.jpg" class="d-block w-100" alt="Dan Reynolds cantando en un concierto.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/images/foto6.jpg" class="d-block w-100" alt="La banda despidiéndose en un concierto.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/images/foto5.jpg" class="d-block w-100" alt="Wayne Sermon tocando en un concierto.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/images/foto4.jpg" class="d-block w-100" alt="Foto de los integrantes de la banda.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/images/foto3.png" class="d-block w-100" alt="Foto de los integrantes de la banda.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/images/foto1.jpeg" class="d-block w-100" alt="Dan Reynolds cantando en un concierto.">
-                    </div>
-                </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="instas">
+            <h2>¡Podés ver mucho más en sus Instagrams!</h2>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/imaginedragons/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAABMRJREFUeF7tm0vLjkEYx//vWiwkh5VDkbKysLFxKGsLZCHHopAPoBSy8QEQRQ5JYmFho8ghdjZKWDmViLLwCeivmRpj7vu6Zq553ve+32ZKz9P7XHO4fvOfa46m0FIvganGp59AAyQopAFqgGxBpCmoKagpyEagKcjGbxIxaBmAfQCWAuB3/8/W0v9zf3J/4qf/fh3A05oV1QJECCcdmJrtKymLsAipCiwroCGBScG8BuB0oLBs4BZAGwE8ya5x+jNQUVTTqZKqSwExxlwtqXAG81BJ2ZBKAI1FOXFfUEmExGGnTrmAGHM+qksfniEhbcqJSbmAGHOooDEnznCEpEo5gMY6tFIgCEi1XsoBxKDM4Dy05Gcpfm5QtlGtohxAjD2MQUNKhLI8apAmTqbyJf3SAhrqtL6/Y1bSqF01zLSAuH7gVmJoqctJTYeq1kVaQJoeKYEXxo9w0+k3uIwp/N41c3YB0rSX6yEqsDfNFCDCYONUM4mDRKdjUKUxiFBUgVoLqFaAzgUT925q6PgVMj8JUBsKBgcoexXboX0OOS5YrTOqaiabLgWpGgNgkYPyXQgNNSCp2qQF9FsKZj2/9ylnJYAtbmisB7AEAOv6BuCFixMPAXxIlK9Z70jNFv0XDVwNFkBdM80OAEcUe7tHAC4AuJfwVjOd90ES/RcNjIC6AuExACcALJS62P3+FcAZABcT9pYNtOi/aGAElFLPNgDng3ijZIQvTnH3owyWTbTov2hgBBSXz33TZQCbtVQiuwcADgJ/YYWpNASI/osGBkCpleohAJcK4fhsjDs8Yw5T6TAT/RcNDIBSG8mbAHYZAXFFfSAqozRYi/6LBgZAqfjzHsAKI6C3ANZUikOi/6KBARDjjb/xZDFz3fpmjhHQTwALojJK10Si/6KBAVCsIAJicJ1nBPQjMQOWzmSi/6JBRUAs6h2A1UZArwCsnQ0xKBWkryQCbC4vLhYPzwZAqVX0bgA3colE9jsB3In+pjkgS1UrjiDRwDDEUrvlxW67sLUQ0l2nHgbqMI1yoUgHUlM9d+/nAKzKhPQGwFEAzyoNLxYjCkQ0MCiIWbvOXPYAOJ4RsF8DOAvgVgKq5bRT9F80MAJi9q6rGaqLxx3bBSXddscdzxN2pStoX5Tov2hQAVDfOfR8t3Hl7cU6AIxRTDzeeOkOzB4D+JWAU7r2CYsS/RcNXGkWGfuhlvWqQlBV6co5LLbqkasVUE1INZTTFx//6RutgkqPE2IhmJ7DuRdi2msdaZKseu1TC5BvdC4oXn3vrXDVE0Ib9M1qCIo96dc2fvcfXj1P6sFWVUBDfbwgDaO+36s+Xqgxa1icmUTe+LwqWYc2SDNzjZlsEo6WlqnyXWXkWlA7UJc6ViOfKv6wohxAs2mYqV6X5QKifem5S41er1WGWj0lgGq8qqjlaGk5avWUAGKeMQ+1LDilgJjPesxQ2vuWfF3HLr1l5gTpuKAxDbds5XhnLYD8cKOaam0gLQpJ5eU2hsoJLzCz6rAC8pX5/6dae0OZ5Ywz9s+JuZXQvqLtrKcWoLAC/67Zv3H2SrM+uoyd8KrwQD47IGYoYUWTAFTS64PN0wAJXdMANUC20dsU1BTUFGQj0BRk49dikMDvD8Jq8knnTViwAAAAAElFTkSuQmCC"/>
+                        <span>Imagine Dragons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/danreynolds/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAABMRJREFUeF7tm0vLjkEYx//vWiwkh5VDkbKysLFxKGsLZCHHopAPoBSy8QEQRQ5JYmFho8ghdjZKWDmViLLwCeivmRpj7vu6Zq553ve+32ZKz9P7XHO4fvOfa46m0FIvganGp59AAyQopAFqgGxBpCmoKagpyEagKcjGbxIxaBmAfQCWAuB3/8/W0v9zf3J/4qf/fh3A05oV1QJECCcdmJrtKymLsAipCiwroCGBScG8BuB0oLBs4BZAGwE8ya5x+jNQUVTTqZKqSwExxlwtqXAG81BJ2ZBKAI1FOXFfUEmExGGnTrmAGHM+qksfniEhbcqJSbmAGHOooDEnznCEpEo5gMY6tFIgCEi1XsoBxKDM4Dy05Gcpfm5QtlGtohxAjD2MQUNKhLI8apAmTqbyJf3SAhrqtL6/Y1bSqF01zLSAuH7gVmJoqctJTYeq1kVaQJoeKYEXxo9w0+k3uIwp/N41c3YB0rSX6yEqsDfNFCDCYONUM4mDRKdjUKUxiFBUgVoLqFaAzgUT925q6PgVMj8JUBsKBgcoexXboX0OOS5YrTOqaiabLgWpGgNgkYPyXQgNNSCp2qQF9FsKZj2/9ylnJYAtbmisB7AEAOv6BuCFixMPAXxIlK9Z70jNFv0XDVwNFkBdM80OAEcUe7tHAC4AuJfwVjOd90ES/RcNjIC6AuExACcALJS62P3+FcAZABcT9pYNtOi/aGAElFLPNgDng3ijZIQvTnH3owyWTbTov2hgBBSXz33TZQCbtVQiuwcADgJ/YYWpNASI/osGBkCpleohAJcK4fhsjDs8Yw5T6TAT/RcNDIBSG8mbAHYZAXFFfSAqozRYi/6LBgZAqfjzHsAKI6C3ANZUikOi/6KBARDjjb/xZDFz3fpmjhHQTwALojJK10Si/6KBAVCsIAJicJ1nBPQjMQOWzmSi/6JBRUAs6h2A1UZArwCsnQ0xKBWkryQCbC4vLhYPzwZAqVX0bgA3colE9jsB3In+pjkgS1UrjiDRwDDEUrvlxW67sLUQ0l2nHgbqMI1yoUgHUlM9d+/nAKzKhPQGwFEAzyoNLxYjCkQ0MCiIWbvOXPYAOJ4RsF8DOAvgVgKq5bRT9F80MAJi9q6rGaqLxx3bBSXddscdzxN2pStoX5Tov2hQAVDfOfR8t3Hl7cU6AIxRTDzeeOkOzB4D+JWAU7r2CYsS/RcNXGkWGfuhlvWqQlBV6co5LLbqkasVUE1INZTTFx//6RutgkqPE2IhmJ7DuRdi2msdaZKseu1TC5BvdC4oXn3vrXDVE0Ib9M1qCIo96dc2fvcfXj1P6sFWVUBDfbwgDaO+36s+Xqgxa1icmUTe+LwqWYc2SDNzjZlsEo6WlqnyXWXkWlA7UJc6ViOfKv6wohxAs2mYqV6X5QKifem5S41er1WGWj0lgGq8qqjlaGk5avWUAGKeMQ+1LDilgJjPesxQ2vuWfF3HLr1l5gTpuKAxDbds5XhnLYD8cKOaam0gLQpJ5eU2hsoJLzCz6rAC8pX5/6dae0OZ5Ywz9s+JuZXQvqLtrKcWoLAC/67Zv3H2SrM+uoyd8KrwQD47IGYoYUWTAFTS64PN0wAJXdMANUC20dsU1BTUFGQj0BRk49dikMDvD8Jq8knnTViwAAAAAElFTkSuQmCC"/>
+                        <span>Dan Reynolds</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/waynesermonid/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAABMRJREFUeF7tm0vLjkEYx//vWiwkh5VDkbKysLFxKGsLZCHHopAPoBSy8QEQRQ5JYmFho8ghdjZKWDmViLLwCeivmRpj7vu6Zq553ve+32ZKz9P7XHO4fvOfa46m0FIvganGp59AAyQopAFqgGxBpCmoKagpyEagKcjGbxIxaBmAfQCWAuB3/8/W0v9zf3J/4qf/fh3A05oV1QJECCcdmJrtKymLsAipCiwroCGBScG8BuB0oLBs4BZAGwE8ya5x+jNQUVTTqZKqSwExxlwtqXAG81BJ2ZBKAI1FOXFfUEmExGGnTrmAGHM+qksfniEhbcqJSbmAGHOooDEnznCEpEo5gMY6tFIgCEi1XsoBxKDM4Dy05Gcpfm5QtlGtohxAjD2MQUNKhLI8apAmTqbyJf3SAhrqtL6/Y1bSqF01zLSAuH7gVmJoqctJTYeq1kVaQJoeKYEXxo9w0+k3uIwp/N41c3YB0rSX6yEqsDfNFCDCYONUM4mDRKdjUKUxiFBUgVoLqFaAzgUT925q6PgVMj8JUBsKBgcoexXboX0OOS5YrTOqaiabLgWpGgNgkYPyXQgNNSCp2qQF9FsKZj2/9ylnJYAtbmisB7AEAOv6BuCFixMPAXxIlK9Z70jNFv0XDVwNFkBdM80OAEcUe7tHAC4AuJfwVjOd90ES/RcNjIC6AuExACcALJS62P3+FcAZABcT9pYNtOi/aGAElFLPNgDng3ijZIQvTnH3owyWTbTov2hgBBSXz33TZQCbtVQiuwcADgJ/YYWpNASI/osGBkCpleohAJcK4fhsjDs8Yw5T6TAT/RcNDIBSG8mbAHYZAXFFfSAqozRYi/6LBgZAqfjzHsAKI6C3ANZUikOi/6KBARDjjb/xZDFz3fpmjhHQTwALojJK10Si/6KBAVCsIAJicJ1nBPQjMQOWzmSi/6JBRUAs6h2A1UZArwCsnQ0xKBWkryQCbC4vLhYPzwZAqVX0bgA3colE9jsB3In+pjkgS1UrjiDRwDDEUrvlxW67sLUQ0l2nHgbqMI1yoUgHUlM9d+/nAKzKhPQGwFEAzyoNLxYjCkQ0MCiIWbvOXPYAOJ4RsF8DOAvgVgKq5bRT9F80MAJi9q6rGaqLxx3bBSXddscdzxN2pStoX5Tov2hQAVDfOfR8t3Hl7cU6AIxRTDzeeOkOzB4D+JWAU7r2CYsS/RcNXGkWGfuhlvWqQlBV6co5LLbqkasVUE1INZTTFx//6RutgkqPE2IhmJ7DuRdi2msdaZKseu1TC5BvdC4oXn3vrXDVE0Ib9M1qCIo96dc2fvcfXj1P6sFWVUBDfbwgDaO+36s+Xqgxa1icmUTe+LwqWYc2SDNzjZlsEo6WlqnyXWXkWlA7UJc6ViOfKv6wohxAs2mYqV6X5QKifem5S41er1WGWj0lgGq8qqjlaGk5avWUAGKeMQ+1LDilgJjPesxQ2vuWfF3HLr1l5gTpuKAxDbds5XhnLYD8cKOaam0gLQpJ5eU2hsoJLzCz6rAC8pX5/6dae0OZ5Ywz9s+JuZXQvqLtrKcWoLAC/67Zv3H2SrM+uoyd8KrwQD47IGYoYUWTAFTS64PN0wAJXdMANUC20dsU1BTUFGQj0BRk49dikMDvD8Jq8knnTViwAAAAAElFTkSuQmCC"/>
+                        <span>Wayne Sermon</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/benamckee/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAABMRJREFUeF7tm0vLjkEYx//vWiwkh5VDkbKysLFxKGsLZCHHopAPoBSy8QEQRQ5JYmFho8ghdjZKWDmViLLwCeivmRpj7vu6Zq553ve+32ZKz9P7XHO4fvOfa46m0FIvganGp59AAyQopAFqgGxBpCmoKagpyEagKcjGbxIxaBmAfQCWAuB3/8/W0v9zf3J/4qf/fh3A05oV1QJECCcdmJrtKymLsAipCiwroCGBScG8BuB0oLBs4BZAGwE8ya5x+jNQUVTTqZKqSwExxlwtqXAG81BJ2ZBKAI1FOXFfUEmExGGnTrmAGHM+qksfniEhbcqJSbmAGHOooDEnznCEpEo5gMY6tFIgCEi1XsoBxKDM4Dy05Gcpfm5QtlGtohxAjD2MQUNKhLI8apAmTqbyJf3SAhrqtL6/Y1bSqF01zLSAuH7gVmJoqctJTYeq1kVaQJoeKYEXxo9w0+k3uIwp/N41c3YB0rSX6yEqsDfNFCDCYONUM4mDRKdjUKUxiFBUgVoLqFaAzgUT925q6PgVMj8JUBsKBgcoexXboX0OOS5YrTOqaiabLgWpGgNgkYPyXQgNNSCp2qQF9FsKZj2/9ylnJYAtbmisB7AEAOv6BuCFixMPAXxIlK9Z70jNFv0XDVwNFkBdM80OAEcUe7tHAC4AuJfwVjOd90ES/RcNjIC6AuExACcALJS62P3+FcAZABcT9pYNtOi/aGAElFLPNgDng3ijZIQvTnH3owyWTbTov2hgBBSXz33TZQCbtVQiuwcADgJ/YYWpNASI/osGBkCpleohAJcK4fhsjDs8Yw5T6TAT/RcNDIBSG8mbAHYZAXFFfSAqozRYi/6LBgZAqfjzHsAKI6C3ANZUikOi/6KBARDjjb/xZDFz3fpmjhHQTwALojJK10Si/6KBAVCsIAJicJ1nBPQjMQOWzmSi/6JBRUAs6h2A1UZArwCsnQ0xKBWkryQCbC4vLhYPzwZAqVX0bgA3colE9jsB3In+pjkgS1UrjiDRwDDEUrvlxW67sLUQ0l2nHgbqMI1yoUgHUlM9d+/nAKzKhPQGwFEAzyoNLxYjCkQ0MCiIWbvOXPYAOJ4RsF8DOAvgVgKq5bRT9F80MAJi9q6rGaqLxx3bBSXddscdzxN2pStoX5Tov2hQAVDfOfR8t3Hl7cU6AIxRTDzeeOkOzB4D+JWAU7r2CYsS/RcNXGkWGfuhlvWqQlBV6co5LLbqkasVUE1INZTTFx//6RutgkqPE2IhmJ7DuRdi2msdaZKseu1TC5BvdC4oXn3vrXDVE0Ib9M1qCIo96dc2fvcfXj1P6sFWVUBDfbwgDaO+36s+Xqgxa1icmUTe+LwqWYc2SDNzjZlsEo6WlqnyXWXkWlA7UJc6ViOfKv6wohxAs2mYqV6X5QKifem5S41er1WGWj0lgGq8qqjlaGk5avWUAGKeMQ+1LDilgJjPesxQ2vuWfF3HLr1l5gTpuKAxDbds5XhnLYD8cKOaam0gLQpJ5eU2hsoJLzCz6rAC8pX5/6dae0OZ5Ywz9s+JuZXQvqLtrKcWoLAC/67Zv3H2SrM+uoyd8KrwQD47IGYoYUWTAFTS64PN0wAJXdMANUC20dsU1BTUFGQj0BRk49dikMDvD8Jq8knnTViwAAAAAElFTkSuQmCC"/>
+                        <span>Ben McKee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/danielplatzman/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAABMRJREFUeF7tm0vLjkEYx//vWiwkh5VDkbKysLFxKGsLZCHHopAPoBSy8QEQRQ5JYmFho8ghdjZKWDmViLLwCeivmRpj7vu6Zq553ve+32ZKz9P7XHO4fvOfa46m0FIvganGp59AAyQopAFqgGxBpCmoKagpyEagKcjGbxIxaBmAfQCWAuB3/8/W0v9zf3J/4qf/fh3A05oV1QJECCcdmJrtKymLsAipCiwroCGBScG8BuB0oLBs4BZAGwE8ya5x+jNQUVTTqZKqSwExxlwtqXAG81BJ2ZBKAI1FOXFfUEmExGGnTrmAGHM+qksfniEhbcqJSbmAGHOooDEnznCEpEo5gMY6tFIgCEi1XsoBxKDM4Dy05Gcpfm5QtlGtohxAjD2MQUNKhLI8apAmTqbyJf3SAhrqtL6/Y1bSqF01zLSAuH7gVmJoqctJTYeq1kVaQJoeKYEXxo9w0+k3uIwp/N41c3YB0rSX6yEqsDfNFCDCYONUM4mDRKdjUKUxiFBUgVoLqFaAzgUT925q6PgVMj8JUBsKBgcoexXboX0OOS5YrTOqaiabLgWpGgNgkYPyXQgNNSCp2qQF9FsKZj2/9ylnJYAtbmisB7AEAOv6BuCFixMPAXxIlK9Z70jNFv0XDVwNFkBdM80OAEcUe7tHAC4AuJfwVjOd90ES/RcNjIC6AuExACcALJS62P3+FcAZABcT9pYNtOi/aGAElFLPNgDng3ijZIQvTnH3owyWTbTov2hgBBSXz33TZQCbtVQiuwcADgJ/YYWpNASI/osGBkCpleohAJcK4fhsjDs8Yw5T6TAT/RcNDIBSG8mbAHYZAXFFfSAqozRYi/6LBgZAqfjzHsAKI6C3ANZUikOi/6KBARDjjb/xZDFz3fpmjhHQTwALojJK10Si/6KBAVCsIAJicJ1nBPQjMQOWzmSi/6JBRUAs6h2A1UZArwCsnQ0xKBWkryQCbC4vLhYPzwZAqVX0bgA3colE9jsB3In+pjkgS1UrjiDRwDDEUrvlxW67sLUQ0l2nHgbqMI1yoUgHUlM9d+/nAKzKhPQGwFEAzyoNLxYjCkQ0MCiIWbvOXPYAOJ4RsF8DOAvgVgKq5bRT9F80MAJi9q6rGaqLxx3bBSXddscdzxN2pStoX5Tov2hQAVDfOfR8t3Hl7cU6AIxRTDzeeOkOzB4D+JWAU7r2CYsS/RcNXGkWGfuhlvWqQlBV6co5LLbqkasVUE1INZTTFx//6RutgkqPE2IhmJ7DuRdi2msdaZKseu1TC5BvdC4oXn3vrXDVE0Ib9M1qCIo96dc2fvcfXj1P6sFWVUBDfbwgDaO+36s+Xqgxa1icmUTe+LwqWYc2SDNzjZlsEo6WlqnyXWXkWlA7UJc6ViOfKv6wohxAs2mYqV6X5QKifem5S41er1WGWj0lgGq8qqjlaGk5avWUAGKeMQ+1LDilgJjPesxQ2vuWfF3HLr1l5gTpuKAxDbds5XhnLYD8cKOaam0gLQpJ5eU2hsoJLzCz6rAC8pX5/6dae0OZ5Ywz9s+JuZXQvqLtrKcWoLAC/67Zv3H2SrM+uoyd8KrwQD47IGYoYUWTAFTS64PN0wAJXdMANUC20dsU1BTUFGQj0BRk49dikMDvD8Jq8knnTViwAAAAAElFTkSuQmCC"/>
+                        <span>Daniel Platzman</span>
+                    </a>
+                </li>
+            </ul>
             </div>
+
+        <div class="contenedorCarrusel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>            
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/images/foto7.jpg" class="d-block w-100" alt="Dan Reynolds cantando en un concierto.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/foto6.jpg" class="d-block w-100" alt="La banda despidiéndose en un concierto.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/foto5.jpg" class="d-block w-100" alt="Wayne Sermon tocando en un concierto.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/foto4.jpg" class="d-block w-100" alt="Foto de los integrantes de la banda.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/foto3.png" class="d-block w-100" alt="Foto de los integrantes de la banda.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/foto1.jpeg" class="d-block w-100" alt="Dan Reynolds cantando en un concierto.">
+                        </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
         </div>
     </div>
     <h2>Tiktoks</h2>
+    <p>¡También puedes ir a ver su <a href="https://www.tiktok.com/@imaginedragons?is_from_webapp=1&sender_device=pc">cuenta oficial en Tiktok!</a></p>
+    <div class="mobileTT">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@imaginedragons" data-unique-id="imaginedragons" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@imaginedragons?refer=creator_embed">@imaginedragons</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
     <section class="tiktoks">
         <div class="container text-center">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
@@ -112,21 +152,6 @@
         </div>
     </section>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!--                                            ||Fin del Header||                                             -->
 
