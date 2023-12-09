@@ -529,11 +529,11 @@ body {
   width: 100%;
 }
 .container-fluid .secForm .ayudanos .contactBotoncitos button {
-  background-color: #515a87;
+  background-color: #bfdded;
   color: #120907;
 }
 .container-fluid .secForm .ayudanos .contactBotoncitos button:hover {
-  background-color: #bfdded;
+  background-color: #515a87;
 }
 .container-fluid .secForm .ayudanos #op textarea {
   height: 260px;
