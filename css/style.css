@@ -12,10 +12,10 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-/* Importar fuentes de google font */
+/* Fuente importada de google font */
 @font-face {
   font-family: "DevilCandle";
-  src: url(../assets/fonts/devilCandle.otf);
+  src: url(/assets/fonts/DevilCandle.otf);
 }
 #top {
   display: flex;
@@ -34,8 +34,12 @@ body {
   align-items: center;
   width: 100%;
 }
-.cabecera .logo {
+.cabecera a {
   width: 25%;
+  height: 3.8rem;
+}
+.cabecera a .logo {
+  width: 100%;
   border-radius: 2rem;
 }
 .cabecera nav {
@@ -58,7 +62,10 @@ body {
   color: white;
 }
 .cabecera nav .itemNav a:hover {
-  color: rgb(184, 125, 235);
+  background: linear-gradient(40deg, rgb(184, 125, 235) 37%, rgb(139, 160, 231) 81%);
+  background-clip: text; /* Aplica el fondo de gradiente al texto */
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  color: transparent; /* Hace el texto transparente para mostrar el fondo de gradiente */
 }
 .cabecera nav #checkMenuu {
   display: none;
@@ -99,7 +106,11 @@ body {
   color: white;
 }
 .footer .footerNav ul a:hover {
-  color: rgb(184, 125, 235);
+  background: linear-gradient(40deg, rgb(184, 125, 235) 37%, rgb(139, 160, 231) 81%);
+  background-clip: text; /* Aplica el fondo de gradiente al texto */
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  color: transparent; /* Hace el texto transparente para mostrar el fondo de gradiente */
+  padding-left: 4%;
 }
 .footer .newsletter {
   display: flex;
@@ -125,6 +136,44 @@ body {
 }
 .footer .newsletter .contactBotoncitos {
   width: 50%;
+}
+.footer .newsletter .contactBotoncitos button {
+  color: black;
+  background: #bfdded;
+}
+.footer .newsletter .contactBotoncitos button:hover {
+  background: #8ba0e7;
+  color: white;
+}
+
+.errorSec {
+  height: 91.7vh;
+  background-color: #515a87;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 2.5%;
+}
+.errorSec h1, .errorSec .secGaleria h2, .secGaleria .errorSec h2 {
+  font-size: 5.3em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1c1f34;
+}
+.errorSec p {
+  padding: 1em;
+  padding-top: 1em;
+  font-size: 2em;
+  height: 19vh;
+}
+.errorSec a {
+  text-decoration: none;
+  color: black;
+  background-color: #bfdded;
+  border-radius: 2rem;
+  padding: 1%;
+  border: solid 1px white;
+  margin-left: 36%;
 }
 
 .contenedorGrande, .contenedorGrande .imgBackground {
@@ -480,11 +529,11 @@ body {
   width: 100%;
 }
 .container-fluid .secForm .ayudanos .contactBotoncitos button {
-  background-color: #bfdded;
+  background-color: #515a87;
   color: #120907;
 }
 .container-fluid .secForm .ayudanos .contactBotoncitos button:hover {
-  background-color: #515a87;
+  background-color: #bfdded;
 }
 .container-fluid .secForm .ayudanos #op textarea {
   height: 260px;
@@ -680,6 +729,7 @@ body {
     width: 100%;
     height: 190vh;
     display: flex;
+    margin-top: 15%;
     flex-direction: column-reverse;
   }
   .secGaleria .contenidoMultimedia .contenedorCarrusel {

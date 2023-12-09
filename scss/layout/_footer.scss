@@ -25,7 +25,11 @@
                 text-decoration:none;
                 color: white;
                 &:hover {
-                    color: $color0;
+                    background: linear-gradient(40deg, rgba(184,125,235,1) 37%, rgba(139,160,231,1) 81%);
+                    background-clip: text; /* Aplica el fondo de gradiente al texto */
+                    -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari) */
+                    color: transparent; /* Hace el texto transparente para mostrar el fondo de gradiente */
+                    padding-left: 4%;
                 }
             }
         }
@@ -53,6 +57,14 @@
         }
         .contactBotoncitos {
             width: 50%;
+            button {
+                color: black;
+                background: $color5;
+            &:hover {
+                background: $color4;
+                color: white;
+            }
+            }
         }
     }
 }

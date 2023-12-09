@@ -135,75 +135,46 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 /* FIN DE PAGINA INTEGRANTES */
 /*__________________________________________________ */
 /* INICIO DE PAGINA DISCOGRAFIA */
-.contenidoDiscografia {
-    width: 100%;
-    height: 350vh;
-    .discoHead {
-        h1 {
-            font-size: 3.5rem;
+    .contenidoDiscografia {
+        width: 100%;
+        height: 350vh;
+        .discoHead {
+            h1 {
+                font-size: 3.5rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
+            a {
+                display: inline-block;
+                width: 20%;
+                margin: 0;
+                margin-left: 20%;
+                padding: 0;
+                position: initial;
+                img {
+                    width: 55px;
+                }
+            }
         }
-        p {
-            font-size: 1.25rem;
-        }
-        a {
-            display: inline-block;
-            width: 20%;
-            margin: 0;
-            margin-left: 20%;
-            padding: 0;
-            position: initial;
-            img {
-                width: 55px;
+        .secDiscos {
+            display: flex;
+            // height: 250vh;
+            flex-direction: row;
+            justify-content: start;
+            margin-top: 10vh;
+            iframe {
+                width: 90%;
+                height: 360px;
+                margin: 0 0 8vh 2%;
+                padding: 0;
+                margin-bottom: 10vh;
             }
         }
     }
-.secDiscos {
-    display: flex;
-    // height: 250vh;
-    flex-direction: row;
-    justify-content: start;
-    margin-top: 10vh;
-    iframe {
-        width: 90%;
-        height: 360px;
-        margin: 0 0 8vh 2%;
-        padding: 0;
-        margin-bottom: 10vh;
-
-    }
-
-}
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
 /* FIN DE PAGINA DISCOGRAFIA */
 /*__________________________________________________ */
 /* INICIO DE PAGINA GALERIA */
@@ -222,6 +193,7 @@
             width: 100%;
             height: 190vh;
             display: flex;
+            margin-top: 15%;
             flex-direction: column-reverse;
                 .contenedorCarrusel {
                     width: 100%;

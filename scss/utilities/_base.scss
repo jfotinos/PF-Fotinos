@@ -22,10 +22,7 @@ $color0:rgb(184, 125, 235);
 body {
 	font-family: 'Ubuntu', sans-serif;
 }
-
-
 @mixin tamanio($ancho, $alto) {
     width: $ancho;
     height: $alto;
 }
-// Se usa usando @include tamanio (30px, 30px); BORRAR ANTES DE ENTREGAR

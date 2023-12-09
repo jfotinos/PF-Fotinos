@@ -14,10 +14,13 @@
     justify-content:space-between ;
     align-items: center;
     width: 100%;
-
-    .logo {
+    a {
         width: 25%;
-        border-radius: 2rem;
+        height: 3.8rem;
+        .logo {
+            width: 100%;
+            border-radius: 2rem;
+        }
     }
     // Nav Header
     nav {
@@ -30,7 +33,6 @@
         .itemNav {
             display: inline-block;
             padding: 15px 43px;
-            // font-family: 'Ubuntu', sans-serif;
             font-family: "DevilCandle";
             font-size: 22px;
             font-weight: 300;
@@ -38,8 +40,10 @@
                 text-decoration:none;
                 color: white;
                 &:hover{
-                    // color: #8ba0e7;
-                    color: $color0;
+                    background: linear-gradient(40deg, rgba(184,125,235,1) 37%, rgba(139,160,231,1) 81%);
+                    background-clip: text; /* Aplica el fondo de gradiente al texto */
+                    -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari) */
+                    color: transparent; /* Hace el texto transparente para mostrar el fondo de gradiente */
                 }
             }
         }

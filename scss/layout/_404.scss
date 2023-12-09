@@ -1,0 +1,31 @@
+.errorSec {
+    height: 91.7vh;
+    background-color: $color3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2.5%;
+    h1 {
+        font-size: 5.3em;
+        text-align: center;
+        margin-bottom: 40px;
+        color: $color2;
+    }
+    p {
+        padding: 1em;
+        padding-top: 1em;
+        font-size: 2em;
+        height: 19vh;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        background-color: $color5;
+        border-radius: 2rem;
+        padding: 1%;
+        border: solid 1px white;
+        margin-left: 36%;
+
+
+    }
+}
